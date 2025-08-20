@@ -13,10 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: '[Your Name] - Web Developer',
+	title: 'Francisco Javier Paredes - Frontend Developer',
 	description:
 		'Welcome to my portfolio! I am a passionate web developer creating modern, responsive, and user-friendly websites. Specializing in frontend technologies and interactive user interfaces, I build engaging web experiences that make an impact.',
 	keywords: [
+		'Web Jujuy',
 		'Web Developer',
 		'Frontend Developer',
 		'React Developer',
@@ -31,12 +32,12 @@ export const metadata: Metadata = {
 		'Performance Optimization',
 		'Modern Web Development',
 		'Progressive Web Apps',
-		'[Your Name]',
+		'Francisco Javier Paredes',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'rancisco Javier Paredes' }],
+	creator: 'Francisco Javier Paredes',
 	openGraph: {
-		title: '[Your Name] - Web Developer Portfolio',
+		title: 'Francisco Javier Paredes - Web Developer Portfolio',
 		description: 'Passionate web developer crafting modern and engaging digital experiences. Explore my projects and web development expertise.',
 		url: 'https://your-domain.com',
 		siteName: '[Your Name] - Portfolio',
