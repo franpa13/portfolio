@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaHtml5, FaReact,  FaGitAlt, FaNode } from "react-icons/fa";
+import { FaHtml5, FaReact, FaGitAlt, FaNode } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { RiNextjsLine } from "react-icons/ri";

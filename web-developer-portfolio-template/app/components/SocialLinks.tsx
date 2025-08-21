@@ -1,11 +1,11 @@
 import { FileText, Mail, Linkedin } from 'lucide-react';
-import { SiGithub,  SiTiktok } from '@icons-pack/react-simple-icons';
+import { SiGithub, SiTiktok } from '@icons-pack/react-simple-icons';
 
 const SocialLinks = () => {
   const socials = [
     { name: 'GitHub', icon: <SiGithub />, href: 'https://github.com/franpa13' },
     { name: 'LinkedIn', icon: <Linkedin />, href: 'https://www.linkedin.com/in/francisco-paredes-354a2b26b/' },
-    { name: 'CV', icon: <FileText />, href: 'https://drive.google.com/file/d/1Qfgltw-9aJw7HCT99Z4wsMA2C986qiNr/view?usp=sharing' },
+    { name: 'CV', icon: <FileText />, href: 'https://drive.google.com/file/d/1Gxglwg2xu7zU7EE7am4WtsdJGaVIRJTo/view?usp=sharing' },
     { name: 'Email', icon: <Mail />, href: 'mailto:franpa619@gmail.com' },
     { name: 'TikTok(Creador de contenido sobre programacion)', icon: <SiTiktok />, href: 'https://www.tiktok.com/@jujedev?is_from_webapp=1&sender_device=pc' },
   ];
