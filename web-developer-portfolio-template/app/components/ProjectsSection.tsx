@@ -25,7 +25,7 @@ export const ProjectsSection = () => {
 					gradientFrom="from-blue-300"
 					gradientTo="to-purple-400"
 				/>
-				
+
 
 				{/* Carrusel Proyectos Profesionales */}
 				<span className="text-2xl w-full text-start border-l-4 border-[#62a3f9]  px-2 py-1 font-bold my-12 block">

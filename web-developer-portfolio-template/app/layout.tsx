@@ -13,52 +13,54 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Francisco Javier Paredes - Frontend Developer',
+	title: 'Francisco Javier Paredes | Frontend Developer en Argentina',
 	description:
-		'Welcome to my portfolio! I am a passionate web developer creating modern, responsive, and user-friendly websites. Specializing in frontend technologies and interactive user interfaces, I build engaging web experiences that make an impact.',
+		"Portfolio de Francisco Javier Paredes, Desarrollador Frontend de Argentina especializado en React, Next.js y tecnologías web modernas. Creo experiencias digitales rápidas, receptivas y fáciles de usar desde Jujuy para el mundo.",
 	keywords: [
-		'Web Jujuy',
-		'Web Developer',
-		'Frontend Developer',
+		'Francisco Javier Paredes',
+		'Frontend Developer Argentina',
+		'Desarrollador Web Argentina',
 		'React Developer',
-		'Next.js',
+		'Next.js Developer',
 		'JavaScript',
 		'TypeScript',
-		'HTML5',
-		'CSS3',
-		'Responsive Design',
 		'UI/UX',
-		'Web Accessibility',
-		'Performance Optimization',
-		'Modern Web Development',
+		'Diseño Web Responsivo',
+		'Optimización de Performance',
+		'SEO',
+		'Accesibilidad Web',
+		'Desarrollo Web Moderno',
 		'Progressive Web Apps',
-		'Francisco Javier Paredes',
+		'Web Jujuy',
+		'Portfolio',
 	],
-	authors: [{ name: 'rancisco Javier Paredes' }],
+	authors: [{ name: 'Francisco Javier Paredes' }],
 	creator: 'Francisco Javier Paredes',
+	publisher: 'Francisco Javier Paredes',
 	openGraph: {
-		title: 'Francisco Javier Paredes - Web Developer Portfolio',
-		description: 'Passionate web developer crafting modern and engaging digital experiences. Explore my projects and web development expertise.',
-		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+		title: 'Francisco Javier Paredes | Portfolio Frontend Developer en Argentina',
+		description: 'Explora mi portfolio y proyectos.',
+		url: 'https://franciscoparedes.vercel.app/',
+		siteName: 'Francisco Javier Paredes Portfolio',
 		images: [
 			{
-				url: '/og-image.jpg',
+				url: 'https://cdn.icon-icons.com/icons2/2018/PNG/512/code_html_link_share_icon_123633.png',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Web Developer Portfolio',
+				alt: 'Portfolio Francisco Javier Paredes',
 			},
 		],
-		locale: 'en_US',
+		locale: 'es_AR',
 		type: 'website',
+
+		videos: [
+			{
+				url: 'https://www.tiktok.com/@jujedev',
+				type: 'text/html',
+			},
+		],
 	},
-	twitter: {
-		card: 'summary_large_image',
-		title: '[Your Name] - Web Developer',
-		description: 'Passionate web developer crafting modern and engaging digital experiences. Explore my projects and web development expertise.',
-		creator: '@yourusername',
-		images: ['/og-image.jpg'],
-	},
+	
 	robots: {
 		index: true,
 		follow: true,
@@ -70,6 +72,11 @@ export const metadata: Metadata = {
 			'max-snippet': -1,
 		},
 	},
+	icons: {
+		icon: '/favicon.ico',
+		shortcut: '/favicon-16x16.png',
+		apple: '/apple-touch-icon.png',
+	},
 };
 
 export default function RootLayout({
@@ -78,8 +85,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+		<html lang="es">
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				{children}
+			</body>
 		</html>
 	);
 }

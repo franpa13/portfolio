@@ -54,13 +54,20 @@ export const SectionHeader = ({
             </motion.h2>
 
             <motion.p
-                className="text-base sm:text-lg text-gray-400 max-w-2xl text-center mt-4 leading-relaxed"
+                className="text-base sm:text-lg text-gray-400 max-w-2xl mt-4 leading-relaxed flex flex-col items-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                {description}
+                {description.split("\n").map((line, index) => (
+                    <span
+                        key={index}
+                        className="w-full text-center block"
+                    >
+                        {line}
+                    </span>
+                ))}
             </motion.p>
         </div>
     );

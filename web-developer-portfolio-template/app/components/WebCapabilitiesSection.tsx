@@ -64,7 +64,7 @@ export const WebCapabilitiesSection = () => {
 				<div className="absolute -bottom-40 -right-40 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
 			</div>
 
-			<div className="max-w-full mx-auto relative z-10">
+			<div className="max-w-full  mx-auto relative z-10">
 				<SectionHeader
 					subtitle=""
 					title=""
