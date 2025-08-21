@@ -90,7 +90,7 @@ export const experiences: ExperienceCardProps[] = [
 ];
 export const ExperiencieSection = () => {
 	return (
-		<section className="py-12 sm:py-20 px-2 lg:px-4 bg-[#161B22]">
+		<section className="py-12 sm:py-20 px-2 lg:px-4 bg-[#161820]">
 			<div className="max-w-6xl mx-auto">
 
 				<SectionHeader title='' highlightedText='Experiencia Profesional' gradientFrom="from-blue-400"

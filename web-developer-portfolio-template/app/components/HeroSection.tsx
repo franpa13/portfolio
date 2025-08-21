@@ -4,6 +4,8 @@ import SocialLinks from "./SocialLinks";
 import { Rocket, Laptop, Code2 } from "lucide-react";
 import { SiReact } from "@icons-pack/react-simple-icons";
 import { motion } from 'framer-motion';
+import Image from "next/image";
+
 export const HeroSection = () => {
 	return (
 		<div id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -33,11 +35,31 @@ export const HeroSection = () => {
 
 
 			{/* Contenido principal */}
-			<div className="relative z-10 max-w-5xl mx-auto px-4">
-				<motion.div initial={{ opacity: 0, y: 20 }}
+			<div className="relative w-full flex flex-col md:flex-row-reverse md:justify-center gap-x-36 flew-wrap items-start z-10  mx-auto px-4">
+				<motion.div
+					initial={{ opacity: 0, scale: 0.9 }}
+					whileInView={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.6, ease: "easeOut" }}
+					viewport={{ once: true }}
+					className="hidden  md:block relative  w-40 h-40  sm:w-40 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
+				>
+					{/* Glow animado detrás de la foto */}
+					<div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/40 to-pink-500/40 blur-2xl animate-pulse-slow"></div>
+
+					<Image
+						src="/perfi2.png"
+						alt="profile"
+						fill
+						className="object-cover ml-2  transition duration-500"
+					/>
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
-					viewport={{ once: true }} className="text-center space-y-6">
+					viewport={{ once: true }}
+					className="text-center space-y-6"
+				>
 					{/* Nombre */}
 					<div className="relative inline-block px-4 sm:px-0">
 						<div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur-xl opacity-75"></div>

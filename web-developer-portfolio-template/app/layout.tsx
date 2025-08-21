@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
+
 const geistSans = Geist({
 	variable: '--font-geist-sans',
 	subsets: ['latin'],
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: 'https://cdn.icon-icons.com/icons2/2018/PNG/512/code_html_link_share_icon_123633.png',       
+		icon: 'https://cdn.icon-icons.com/icons2/2018/PNG/512/code_html_link_share_icon_123633.png',
 		shortcut: '/favicon-16x16.png',
 		apple: '/apple-touch-icon.png',
 	},
@@ -90,6 +91,7 @@ export default function RootLayout({
 	return (
 		<html lang="es">
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
 				{children}
 			</body>
 		</html>
