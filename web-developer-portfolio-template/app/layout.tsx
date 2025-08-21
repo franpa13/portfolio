@@ -13,6 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+
+
+
 	title: 'Francisco Javier Paredes | Frontend Developer en Argentina',
 	description:
 		"Portfolio de Francisco Javier Paredes, Desarrollador Frontend de Argentina especializado en React, Next.js y tecnologías web modernas. Creo experiencias digitales rápidas, receptivas y fáciles de usar desde Jujuy para el mundo.",
@@ -60,7 +63,7 @@ export const metadata: Metadata = {
 			},
 		],
 	},
-	
+
 	robots: {
 		index: true,
 		follow: true,
@@ -73,7 +76,7 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: '/favicon.ico',
+		icon: 'https://cdn.icon-icons.com/icons2/2018/PNG/512/code_html_link_share_icon_123633.png',       
 		shortcut: '/favicon-16x16.png',
 		apple: '/apple-touch-icon.png',
 	},
