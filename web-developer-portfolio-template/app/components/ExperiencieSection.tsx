@@ -5,8 +5,8 @@ import { SectionHeader } from './SectionHeader';
 
 export const experiences: ExperienceCardProps[] = [
 	{
-		role: "Frontend Developer",
-		company: "Proyectos Freelance",
+		role: "Web Developer",
+		company: "Freelancer",
 		date: "2023 – Presente",
 		location: "Remoto",
 		description:
@@ -37,8 +37,8 @@ export const experiences: ExperienceCardProps[] = [
 		methodologies: ["Scrum"],
 	}, {
 		role: "Frontend Developer",
-		company: "Novadeha",
-		date: "Junio 2024 – Presente",
+		company: "Novadeha Group",
+		date: "Feb 2025 – Mayo 2025",
 		location: "Remoto",
 		description:
 			"Desarrollo de interfaces accesibles y de alto rendimiento con Next.js y TypeScript.",
@@ -95,14 +95,7 @@ export const ExperiencieSection = () => {
 				
 				<SectionHeader title='' highlightedText='Experiencia Profesional' gradientFrom="from-blue-400"
 					gradientTo="to-purple-500" subtitleColor="#FFD700" description='Más de 2 años de experiencia en desarrollo frontend, aportando soluciones en proyectos empresariales y freelance, con énfasis en la optimización del rendimiento de aplicaciones.' subtitle='' />
-				{/* <div className='flex flex-col gap-3 items-center justify-center mb-12'>
-					<h2 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-0 text-center">
-						Experiencia Profesional
-					</h2>
-					<p className="text-sm lg:text-base sm:text-lg text-center text-gray-400 max-w-2xl  ">
-						Más de 2 años de experiencia en desarrollo frontend, aportando soluciones en proyectos empresariales y freelance, con énfasis en la optimización del rendimiento de aplicaciones.
-					</p>
-				</div> */}
+			
 
 				{/* AQUI VAN LAS CARDS */}
 				{experiences.map((exp, index) => (

@@ -8,10 +8,11 @@ export const ContactSection = () => {
 				{/* Header Section */}
 				<div className="text-center mb-12">
 					<h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-						¿Buscas un <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Frontend Developer</span>?
+						¿Buscas un <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Desarrollador Web</span>?
 					</h2>
 					<p className="text-lg text-gray-300 max-w-2xl mx-auto">
-						Estoy disponible para nuevas oportunidades laborales. Con mas de 2 años de experiencia entregando soluciones, estoy listo para contribuir a tu equipo.
+						Ayudo a empresas y emprendedores a transformar sus ideas en soluciones digitales efectivas.
+						Si buscas un desarrollador web que combine creatividad, experiencia y resultados, estás en el lugar correcto.
 					</p>
 				</div>
 

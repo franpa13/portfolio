@@ -23,9 +23,11 @@ body {
 	0% {
 		transform: translateY(0px) rotate(0deg);
 	}
+
 	50% {
 		transform: translateY(-20px) rotate(10deg);
 	}
+
 	100% {
 		transform: translateY(0px) rotate(0deg);
 	}
@@ -40,11 +42,17 @@ body {
 }
 
 @keyframes pulse {
+
 	0%,
 	100% {
 		opacity: 0.1;
 	}
+
 	50% {
 		opacity: 0.3;
 	}
+}
+
+html {
+	scroll-behavior: smooth;
 }
