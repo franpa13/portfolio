@@ -14,7 +14,7 @@ interface Particle {
 
 export const BackgroundCanvas = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-  
+
     useEffect(() => {
         const canvas = canvasRef.current;
         if (!canvas) return;
@@ -26,7 +26,7 @@ export const BackgroundCanvas = () => {
         let height = canvas.height = window.innerHeight;
 
         const particles: Particle[] = [];
-        const maxParticles = width  > 768 ? 75 : 18;
+        const maxParticles = width > 768 ? 75 : 18;
 
         class CanvasParticle implements Particle {
             x: number;
@@ -62,7 +62,7 @@ export const BackgroundCanvas = () => {
             }
         }
 
-        // Inicializar partículas
+
         for (let i = 0; i < maxParticles; i++) {
             particles.push(new CanvasParticle());
         }
@@ -74,7 +74,7 @@ export const BackgroundCanvas = () => {
                 particles[i].update();
                 particles[i].draw();
 
-                // Conectar partículas cercanas
+
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x;
                     const dy = particles[i].y - particles[j].y;

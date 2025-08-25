@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import SocialLinks from "./SocialLinks";
-import { Rocket, Laptop, Code2 } from "lucide-react";
+import { Rocket, Laptop, Code2, PhoneCall, CalendarCheck } from "lucide-react";
 import { SiReact } from "@icons-pack/react-simple-icons";
 import { motion } from 'framer-motion';
 import Image from "next/image";
@@ -99,9 +99,10 @@ export const HeroSection = () => {
 						</a>
 						<a
 							href="#contact"
-							className="px-6 sm:px-8 py-2 lg:py-3 bg-[#21262D] rounded-full hover:bg-[#2D333B] transition-colors border border-[#2D333B] hover:border-gray-600 text-center"
+							className="px-6 sm:px-8 py-2 flex items-center justify-center gap-3 lg:py-3 bg-[#21262D] rounded-full hover:bg-[#2D333B] transition-colors border border-[#2D333B] hover:border-gray-600 text-center"
 						>
-							Contactame
+							Agendar Reunión Gratuita
+							<CalendarCheck size={18} />
 						</a>
 					</div>
 					{/* Redes sociales */}
