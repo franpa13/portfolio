@@ -35,13 +35,13 @@ export const HeroSection = () => {
 
 
 			{/* Contenido principal */}
-			<div className="relative w-full flex flex-col md:flex-row-reverse md:justify-center gap-x-36 flew-wrap items-start z-10  mx-auto px-4">
+			<div className="relative  w-full flex flex-col justify-center items-center  gap-y-2 md:flex-row-reverse md:justify-center gap-x-36 flew-wrap lg:items-start z-10  mx-auto px-4">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.9 }}
 					whileInView={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
 					viewport={{ once: true }}
-					className="hidden  md:block relative  w-40 h-40  sm:w-40 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
+					className=" relative  w-36 h-36 sm:w-40 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
 				>
 					{/* Glow animado detrás de la foto */}
 					<div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/40 to-pink-500/40 blur-2xl animate-pulse-slow"></div>
