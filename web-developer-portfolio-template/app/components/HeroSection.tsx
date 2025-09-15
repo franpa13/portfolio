@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import SocialLinks from "./SocialLinks";
-import { Rocket, Laptop, Code2, PhoneCall, CalendarCheck } from "lucide-react";
+import { Rocket, Laptop, Code2, CalendarCheck } from "lucide-react";
 import { SiReact } from "@icons-pack/react-simple-icons";
 import { motion } from 'framer-motion';
 import Image from "next/image";
