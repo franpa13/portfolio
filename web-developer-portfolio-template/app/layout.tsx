@@ -47,6 +47,7 @@ export const metadata: Metadata = {
 		url: 'https://franciscoparedes.vercel.app/',
 		siteName: 'Francisco Javier Paredes Portfolio',
 		images: [
+			
 			{
 				url: 'https://cdn.icon-icons.com/icons2/2018/PNG/512/code_html_link_share_icon_123633.png',
 				width: 1200,
@@ -76,11 +77,7 @@ export const metadata: Metadata = {
 			'max-snippet': -1,
 		},
 	},
-	icons: {
-		icon: 'https://cdn.icon-icons.com/icons2/2018/PNG/512/code_html_link_share_icon_123633.png',
-		shortcut: '/favicon-16x16.png',
-		apple: '/apple-touch-icon.png',
-	},
+
 };
 
 export default function RootLayout({
