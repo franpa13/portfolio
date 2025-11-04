@@ -5,6 +5,31 @@ import { SectionHeader } from './SectionHeader';
 
 export const experiences: ExperienceCardProps[] = [
 	{
+		role: "Frontend Developer",
+		company: "SwaplyAr",
+		date: "Oct 2025 – Presente",
+		location: "Remoto",
+		description:
+			"Participación en el desarrollo frontend de la plataforma SwaplyAr de intercambio de criptomonedas, enfocándome en la creación de interfaces intuitivas y seguras.",
+		achievements: [
+			"Implementacion de buenas prácticas de seguridad en el desarrollo frontend",
+			"Diseño de componentes escalables para clientes diversos siguiendo modelos de Figma",
+			"Colaboración directa con Desarrolladores Backend para integración de APIs asi como con diseñadores UI/UX",
+		],
+		projects: [
+			{
+				name: "SwaplyAr",
+				description:
+					" Plataforma web para intercambio de criptomonedas. Me encargué del desarrollo frontend, implementando un sistema multirol (administrador y usuario). Incluye gestión de transacciones, historial de operaciones, y un módulo de seguridad para autenticación y verificación de usuarios.",
+			},
+
+		],
+		iconCompany: '/swaplyar.jpg',
+		hrefCompany: 'https://www.linkedin.com/company/swaplyar/posts/?feedView=all',
+		stack: ["Next.js", "Tailwind CSS", "Typescript"],
+		methodologies: ["Scrum"],
+	},
+	{
 		role: "Web Developer",
 		company: "Freelancer",
 		date: "2023 – Presente",
@@ -33,9 +58,12 @@ export const experiences: ExperienceCardProps[] = [
 					"Portal de noticias para un diario de Mendoza. Me encargué del diseño responsive de la interfaz y de la integración eficiente de múltiples endpoints en el panel de administración, garantizando una experiencia de usuario optimizada y una gestión fluida de contenidos.",
 			},
 		],
+		iconCompany: '/independiente.png',
 		stack: ["React.js", "Tailwind CSS", "Zustand", "Material UI"],
 		methodologies: ["Scrum"],
-	}, {
+	},
+
+	{
 		role: "Frontend Developer",
 		company: "Novadeha Group",
 		date: "Feb 2025 – Mayo 2025",
@@ -62,6 +90,8 @@ export const experiences: ExperienceCardProps[] = [
 		],
 		stack: ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Zustand"],
 		methodologies: ["Scrum"],
+		iconCompany: '/novadeha.jpg',
+		hrefCompany:"https://www.linkedin.com/company/novadeha-group/posts/?feedView=all"
 	},
 	{
 		role: "Frontend Developer",
@@ -82,8 +112,10 @@ export const experiences: ExperienceCardProps[] = [
 
 			},
 		],
+		iconCompany: '/destored.jpg',
 		stack: ["React.js", "Tailwind CSS", "JavaScript"],
 		methodologies: ["Scrum"],
+		hrefCompany:"https://www.linkedin.com/company/destored/posts/?feedView=all"
 	},
 
 

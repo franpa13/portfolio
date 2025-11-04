@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from "react";
 import { Award, FolderKanban, Code2, Workflow, ChevronDown, ChevronUp } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 // Tipado de props para proyectos
 type Project = {
@@ -20,6 +22,8 @@ export type ExperienceCardProps = {
   projects?: Project[];
   stack?: string[];
   methodologies?: string[];
+  iconCompany?: string;
+  hrefCompany?: string;
 };
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
@@ -32,6 +36,8 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   projects = [],
   stack = [],
   methodologies = [],
+  iconCompany = '',
+  hrefCompany = '#',
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -44,28 +50,51 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   return (
     <div className="bg-[#0d1117] border border-purple-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.3)] transition-all duration-300 overflow-hidden">
       {/* Encabezado - siempre visible y clickeable */}
-      <div 
+      <div
         className="cursor-pointer"
-        onClick={toggleAccordion}
+
       >
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+        <div onClick={toggleAccordion} className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
           <h3 className="text-xl sm:text-2xl font-bold text-white">
             {role}
           </h3>
-          <div className="flex items-center gap-2 my-2 xl:my-0">
+          <div className="flex items-center gap-2 my-2 xl:my-0 transition-all duration-300">
             <span className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-400 text-xs px-3 py-1 rounded-full border border-blue-500/30">
               Tiempo completo
             </span>
             {hasDetails && (
               isExpanded ? (
-                <ChevronUp size={20} className="text-blue-400" />
+                <ChevronUp size={20} className="text-blue-400 transition-all duration-300" />
               ) : (
-                <ChevronDown size={20} className="text-blue-400" />
+                <ChevronDown size={20} className="text-blue-400 transition-all duration-300" />
               )
             )}
           </div>
         </div>
-        <p className="text-blue-400 font-medium mb-1">{company}</p>
+        <div className="flex justify-between mt-7 items-center">
+          <p className="text-blue-400 font-medium mb-1">{company}</p>
+
+          <Link
+            href={hrefCompany}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group w-10 h-10 lg:w-12 lg:h-12 relative  rounded-lg overflow-hidden border border-blue-500/30"
+          >
+            <Image
+              src={iconCompany}
+              alt={`${company} logo`}
+              fill
+              className="object-cover"
+            />
+
+            {/* Tooltip */}
+            <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs text-white bg-blue-600/90 px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+              Visitar startup
+            </span>
+          </Link>
+        </div>
+
+
         <p className="text-gray-400 text-sm mb-4">
           {date} · {location}
         </p>
@@ -74,10 +103,9 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
       {/* Contenido expandible */}
       {hasDetails && (
-        <div 
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isExpanded ? "max-h-[2000px] opacity-100 mt-6" : "max-h-0 opacity-0"
-          }`}
+        <div
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[2000px] opacity-100 mt-6" : "max-h-0 opacity-0"
+            }`}
         >
           {/* Logros principales */}
           {achievements.length > 0 && (

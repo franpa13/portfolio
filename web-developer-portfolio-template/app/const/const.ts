@@ -11,6 +11,16 @@ export const projects: ProjectProps[] = [
 		stack: ["React", "Zustand", "Tailwind CSS", "Axios", "Material UI"],
 		hrefDeploy: "https://progressus-client.vercel.app/"
 	},
+		{
+		title: "SwaplyAr",
+		description:
+			" Plataforma web para intercambio de criptomonedas. Me encargué del desarrollo frontend, implementando un sistema multirol (administrador y usuario). Incluye gestión de transacciones, historial de operaciones, y un módulo de seguridad para autenticación y verificación de usuarios.",
+		image: "/swaplyarweb.png",
+		badge: "Proyecto Empresarial",
+		privateCode: true,
+		stack: ["Next Js", "Tailwind CSS", "Typescript", "Material UI"],
+		hrefDeploy: "https://www.swaplyar.com/es/inicio"
+	},
 	{
 		title: "Resurface",
 		description:

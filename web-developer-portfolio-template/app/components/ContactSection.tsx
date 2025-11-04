@@ -57,7 +57,7 @@ export const ContactSection = () => {
 						¿Tienes una oportunidad laboral que podría interesarme? Me encantaría conocer más sobre tu propuesta.
 					</p>
 					<a
-						href="https://drive.google.com/file/d/1Gxglwg2xu7zU7EE7am4WtsdJGaVIRJTo/view?usp=sharing"
+						href="https://drive.google.com/file/d/1T9LTsFXUEYZIzTiM2yTuhCmWE4pAkPmm/view?usp=sharing"
 						target="_blank"
 						className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#21262D] border border-gray-800 rounded-lg font-medium hover:bg-gray-900 transition-colors text-gray-300"
 					>
