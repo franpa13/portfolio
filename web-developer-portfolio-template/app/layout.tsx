@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import { CursorCanvas } from './components/CursorCanvas';
+
 
 
 const geistSans = Geist({
@@ -15,7 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 
-
+	icons: {
+		icon: 'https://images.icon-icons.com/2018/PNG/512/code_html_link_share_icon_123633.png',
+		shortcut: 'https://images.icon-icons.com/2018/PNG/512/code_html_link_share_icon_123633.png',
+		apple: 'https://images.icon-icons.com/2018/PNG/512/code_html_link_share_icon_123633.png',
+	},
 
 	title: 'Francisco Javier Paredes | Frontend Developer en Argentina',
 	description:
@@ -47,7 +53,7 @@ export const metadata: Metadata = {
 		url: 'https://franciscoparedes.vercel.app/',
 		siteName: 'Francisco Javier Paredes Portfolio',
 		images: [
-			
+
 			{
 				url: 'https://cdn.icon-icons.com/icons2/2018/PNG/512/code_html_link_share_icon_123633.png',
 				width: 1200,
@@ -89,7 +95,9 @@ export default function RootLayout({
 		<html lang="es">
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
+				<CursorCanvas></CursorCanvas>
 				{children}
+
 			</body>
 		</html>
 	);

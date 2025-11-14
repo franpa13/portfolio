@@ -5,7 +5,9 @@
 body {
 	background-color: #000;
 }
-
+* {
+  cursor: none !important;
+}
 .grid-background {
 	background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
 	background-size: 32px 32px;
@@ -17,6 +19,22 @@ body {
 	position: absolute;
 	inset: -100% 0 0 0;
 	background: linear-gradient(to bottom, transparent 0%, rgba(13, 17, 23, 0.5) 40%, #0d1117 100%);
+}
+.perspective {
+  perspective: 900px;
+}
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% auto;
+  animation: gradient-x 4s ease infinite;
 }
 
 @keyframes float {

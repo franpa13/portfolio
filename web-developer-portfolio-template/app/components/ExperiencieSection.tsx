@@ -91,7 +91,7 @@ export const experiences: ExperienceCardProps[] = [
 		stack: ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Zustand"],
 		methodologies: ["Scrum"],
 		iconCompany: '/novadeha.jpg',
-		hrefCompany:"https://www.linkedin.com/company/novadeha-group/posts/?feedView=all"
+		hrefCompany: "https://www.linkedin.com/company/novadeha-group/posts/?feedView=all"
 	},
 	{
 		role: "Frontend Developer",
@@ -115,24 +115,60 @@ export const experiences: ExperienceCardProps[] = [
 		iconCompany: '/destored.jpg',
 		stack: ["React.js", "Tailwind CSS", "JavaScript"],
 		methodologies: ["Scrum"],
-		hrefCompany:"https://www.linkedin.com/company/destored/posts/?feedView=all"
+		hrefCompany: "https://www.linkedin.com/company/destored/posts/?feedView=all"
 	},
 
 
 ];
 export const ExperiencieSection = () => {
 	return (
-		<section className="py-12 sm:py-20 px-2 lg:px-4 bg-[#161820]">
+		<section className="py-3 sm:py-20 px-2 lg:px-4">
 			<div className="max-w-6xl mx-auto">
 
-				<SectionHeader title='' highlightedText='Experiencia Profesional' gradientFrom="from-blue-400"
-					gradientTo="to-purple-500" subtitleColor="#FFD700" description='Más de 2 años de experiencia en desarrollo frontend, aportando soluciones en proyectos empresariales y freelance, con énfasis en la optimización del rendimiento de aplicaciones.' subtitle='' />
+				<SectionHeader
+					title=""
+					highlightedText="Experiencia Profesional"
+					gradientFrom="from-blue-400"
+					gradientTo="to-purple-500"
+					subtitleColor="#FFD700"
+					description="Más de 1.5 años de experiencia desarrollando aplicaciones web modernas, enfocadas en rendimiento, escalabilidad y experiencias de usuario de alto nivel."
+					subtitle=""
+				/>
+
+				<div className="relative mt-16">
+					{/* Línea vertical con fade en extremos */}
+					<div className="absolute left-1/2 top-0 h-full w-[1px] hidden lg:block">
+
+						{/* Línea principal */}
+						<div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-purple-600" />
+
+						{/* Fade superior */}
+						<div className="absolute top-0 left-1/2 -translate-x-1/2 w-[12px] h-10 bg-gradient-to-b from-[#0d1117] to-transparent blur-md" />
+
+						{/* Fade inferior */}
+						<div className="absolute bottom-0 opacity-10 left-1/2 -translate-x-1/2 w-[12px] h-10 bg-gradient-to-t from-[#0d1117] to-transparent blur-md" />
+
+					</div>
 
 
-				{/* AQUI VAN LAS CARDS */}
-				{experiences.map((exp, index) => (
-					<ExperienceCard key={index} {...exp} />
-				))}
+					{/* Cards */}
+					<div className="flex flex-col gap-4 lg:gap-10">
+						{experiences.map((exp, index) => (
+							<div
+								key={index}
+								className={`relative lg:w-1/2 ${index % 2 === 0
+									? "lg:self-start lg:pr-10"
+									: "lg:self-end lg:pl-10"
+									}`}
+							>
+								{/* Punto del timeline */}
+								<div className={`hidden lg:block absolute top-6 w-6 h-6 rounded-full border-2 border-purple-400 bg-[#0d1117] ${index % 2 === 0 ? "-right-3" : "-left-3"}  `}></div>
+								<ExperienceCard {...exp} />
+							</div>
+						))}
+					</div>
+				</div>
+
 			</div>
 		</section>
 	);

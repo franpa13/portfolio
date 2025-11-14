@@ -11,7 +11,7 @@ export const projects: ProjectProps[] = [
 		stack: ["React", "Zustand", "Tailwind CSS", "Axios", "Material UI"],
 		hrefDeploy: "https://progressus-client.vercel.app/"
 	},
-		{
+	{
 		title: "SwaplyAr",
 		description:
 			" Plataforma web para intercambio de criptomonedas. Me encargué del desarrollo frontend, implementando un sistema multirol (administrador y usuario). Incluye gestión de transacciones, historial de operaciones, y un módulo de seguridad para autenticación y verificación de usuarios.",
@@ -44,7 +44,7 @@ export const projects: ProjectProps[] = [
 		title: "NortEc Dashboard",
 		description:
 			"Sistema de gestión de stock, ventas y compras de artículos tecnológicos. Diseñado para un único rol administrativo, permitiendo la administración completa de inventario, operaciones y datos comerciales desde un panel centralizado.",
-		image: "/nortec.png",
+		image: "/nortecc.png",
 		badge: "Proyecto Freelance",
 		privateCode: true,
 		stack: ["React Js", "Typescript", "Shadcn", "Zustand"],
@@ -76,10 +76,22 @@ export const projects: ProjectProps[] = [
 		badge: "Proyecto Empresarial",
 		privateCode: true,
 		stack: ["React Js", "Redux", "React Scroll"],
+		hrefDeploy: "https://mnews.com.ar/"
 	}
 
 ];
 export const personalProjects: ProjectProps[] = [
+		{
+		title: "Todo App",
+		description:
+			"To do list completa donde me encargue de todo el crud completo del backend y frontend.",
+		image: "/todoapp.png",
+		badge: "Proyecto Personal",
+		privateCode: false,
+		href: "https://github.com/franpa13/to-do-list?tab=readme-ov-file",
+		stack: ["React Js", "Node Js", "Express", "Typescript"],
+
+	},
 	{
 		title: "Cafeteria Rimberio",
 		description:
@@ -112,15 +124,5 @@ export const personalProjects: ProjectProps[] = [
 		stack: ["React Js", "Tailwind Css", "Axios"],
 		hrefDeploy: "https://profile-git-jade.vercel.app/"
 	},
-	{
-		title: "Todo App",
-		description:
-			"To do list completa donde me encargue de todo el crud completo del backend y frontend.",
-		image: "/todoapp.png",
-		badge: "Proyecto Personal",
-		privateCode: false,
-		href: "https://github.com/franpa13/to-do-list?tab=readme-ov-file",
-		stack: ["React Js", "Node Js", "Express", "Typescript"],
 
-	}
 ]

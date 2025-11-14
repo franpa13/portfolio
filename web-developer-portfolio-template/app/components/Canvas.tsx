@@ -26,7 +26,7 @@ export const BackgroundCanvas = () => {
         let height = canvas.height = window.innerHeight;
 
         const particles: Particle[] = [];
-        const maxParticles = width > 768 ? 75 : 18;
+        const maxParticles = width > 768 ? 50 : 18;
 
         class CanvasParticle implements Particle {
             x: number;

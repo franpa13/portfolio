@@ -57,12 +57,9 @@ export const WebCapabilitiesSection = () => {
 	const minWidth = isSmallScreen ? "90px" : "150px";
 
 	return (
-		<section className="py-16 bg-[#161820] sm:py-24 px-0 relative overflow-hidden">
+		<section className="py-5 px-0 relative overflow-hidden">
 			{/* Elementos decorativos de fondo */}
-			<div className="absolute inset-0 overflow-hidden">
-				<div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl"></div>
-				<div className="absolute -bottom-40 -right-40 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
-			</div>
+
 
 			<div className="max-w-full  mx-auto relative z-10">
 				<SectionHeader
@@ -77,8 +74,7 @@ export const WebCapabilitiesSection = () => {
 
 				{/* Marquee optimizado para diferentes tamaños de pantalla */}
 				<div className="overflow-hidden py-4 relative">
-					<div className="absolute inset-y-0 left-0 w-6 md::w-20 bg-gradient-to-r from-[#15181d] to-transparent z-10"></div>
-					<div className="absolute inset-y-0 right-0 w-6 md:w-20 bg-gradient-to-l  from-[#15181d] toto-transparent z-10"></div>
+
 
 					<motion.div
 						className="flex md:gap-6 items-center"
@@ -90,9 +86,9 @@ export const WebCapabilitiesSection = () => {
 						}}
 					>
 						{optimizedStack.map(({ icon: Icon, name, color }, i) => (
-							<motion.div
+							<motion.button
 								key={i}
-								className="flex flex-col items-center justify-center p-3 rounded group transition-all duration-300 relative overflow-hidden"
+								className="flex flex-col items-center rounded-md justify-center p-3 rounded group transition-all duration-300 relative overflow-hidden"
 								style={{ minWidth }}
 								whileHover={{
 									y: -5,
@@ -107,7 +103,7 @@ export const WebCapabilitiesSection = () => {
 								<span className="text-xs text-gray-300 mt-2 font-medium z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 									{name}
 								</span>
-							</motion.div>
+							</motion.button>
 						))}
 					</motion.div>
 				</div>

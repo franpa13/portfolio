@@ -5,6 +5,8 @@ import { WebCapabilitiesSection } from './components/WebCapabilitiesSection';
 import { ContactSection } from './components/ContactSection';
 import { GoToHero } from './layout/GoToHero';
 import { BackgroundCanvas } from './components/Canvas';
+import InteractiveCard from './components/InteractiveCard';
+import ProjectCarousel from './components/ProjectCarrousel';
 
 export default function WebDeveloperPortfolio() {
 	return (

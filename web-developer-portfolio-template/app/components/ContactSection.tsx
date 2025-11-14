@@ -3,7 +3,7 @@ import React from 'react';
 
 export const ContactSection = () => {
 	return (
-		<section id="contact" className="py-12 sm:py-20 px-4 bg-[#0D1117] scroll-mt-20">
+		<section id="contact" className="py-5 px-4  scroll-mt-20">
 			<div className="max-w-4xl mx-auto px-4 sm:px-6">
 				{/* Header Section */}
 				<div className="text-center mb-12">
@@ -22,7 +22,7 @@ export const ContactSection = () => {
 						<div className="w-full border-t border-gray-800"></div>
 					</div>
 					<div className="relative flex justify-center">
-						<span className="px-3 bg-[#0D1117] text-lg text-gray-400">Contacto</span>
+						<span className="px-3 bg-[#0D1117] rounded-lg text-lg text-gray-400">Contacto</span>
 					</div>
 				</div>
 
@@ -57,7 +57,7 @@ export const ContactSection = () => {
 						¿Tienes una oportunidad laboral que podría interesarme? Me encantaría conocer más sobre tu propuesta.
 					</p>
 					<a
-						href="https://drive.google.com/file/d/1T9LTsFXUEYZIzTiM2yTuhCmWE4pAkPmm/view?usp=sharing"
+						href="https://drive.google.com/file/d/1xy7i1yEzV8OM66dRfZ39N_1mlm05Kegk/view?usp=sharing"
 						target="_blank"
 						className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#21262D] border border-gray-800 rounded-lg font-medium hover:bg-gray-900 transition-colors text-gray-300"
 					>

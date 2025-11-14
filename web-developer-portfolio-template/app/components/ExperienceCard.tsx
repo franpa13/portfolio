@@ -48,13 +48,13 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   const hasDetails = achievements.length > 0 || projects.length > 0 || stack.length > 0 || methodologies.length > 0;
 
   return (
-    <div className="bg-[#0d1117] border border-purple-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.3)] transition-all duration-300 overflow-hidden">
+    <div   onClick={toggleAccordion} className="bg-[#0d1117] border-none  rounded-2xl p-6 sm:p-8 mb-8 shadow-[0_0_20px_rgba(139,92,246,0.15)] hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
       {/* Encabezado - siempre visible y clickeable */}
       <div
         className="cursor-pointer"
-
+      
       >
-        <div onClick={toggleAccordion} className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
           <h3 className="text-xl sm:text-2xl font-bold text-white">
             {role}
           </h3>
@@ -127,7 +127,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
               <h4 className="flex items-center gap-2 text-sm font-semibold text-gray-400 mb-3">
                 <FolderKanban size={16} className="text-blue-400" /> Proyectos destacados
               </h4>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="flex flex-wrap gap-4">
                 {projects.map((project, i) => (
                   <div
                     key={i}
