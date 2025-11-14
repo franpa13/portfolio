@@ -80,9 +80,9 @@ export const CursorCanvas = () => {
       const isClickable = 
         element instanceof HTMLAnchorElement ||
         element instanceof HTMLButtonElement ||
-        element instanceof HTMLInputElement && (element.type === 'submit' || element.type === 'button') ||
+        (element instanceof HTMLInputElement && (element.type === 'submit' || element.type === 'button')) ||
         element.hasAttribute('onclick') ||
-        element.style.cursor === 'pointer' ||
+        (element instanceof HTMLElement && element.style.cursor === 'pointer') ||
         window.getComputedStyle(element).cursor === 'pointer' ||
         element.closest('a, button, [role="button"], [onclick]');
       
