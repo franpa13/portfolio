@@ -34,7 +34,7 @@ export const projects: ProjectProps[] = [
 		title: "Nortec - Ecommerce",
 		description:
 			"Ecommerce para Nortec donde me encargue del back y front con Next Js y Node Js ",
-		image: "/nortece.png",
+		image: "https://i.postimg.cc/jjjCNJYQ/nortece.png",
 		badge: "Proyecto Freelance",
 		privateCode: true,
 		stack: ["Next Js", "Tailwind", "Typescript"],
