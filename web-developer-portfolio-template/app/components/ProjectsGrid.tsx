@@ -24,12 +24,13 @@ export const ProjectsGrid = ({ items }: ProjectsGridProps) => {
           rel="noopener noreferrer"
           className="transform transition-transform hover:scale-[1.03] duration-300"
         >
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl  bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+          <div className=" rounded-2xl  shadow-2xl relative w-full h-64 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
             {/* Imagen */}
             <Image
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
 
             {/* Badge */}
@@ -43,7 +44,7 @@ export const ProjectsGrid = ({ items }: ProjectsGridProps) => {
             )}
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 hover:opacity-100 transition-opacity duration-400 flex flex-col justify-start p-3">
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 hover:opacity-70 transition-opacity duration-400 flex flex-col justify-start p-3">
               <h3 className="text-lg font-semibold text-white drop-shadow-md">{project.title}</h3>
 
               {/* Tecnologías */}

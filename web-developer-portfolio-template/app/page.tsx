@@ -5,6 +5,7 @@ import { WebCapabilitiesSection } from './components/WebCapabilitiesSection';
 import { ContactSection } from './components/ContactSection';
 import { GoToHero } from './layout/GoToHero';
 import { BackgroundCanvas } from './components/Canvas';
+import { Footer } from './components/Footer';
 
 
 export default function WebDeveloperPortfolio() {
@@ -18,6 +19,7 @@ export default function WebDeveloperPortfolio() {
 				<ProjectsSection />
 				<WebCapabilitiesSection />
 				<ContactSection />
+				<Footer></Footer>
 			</GoToHero>
 
 		</main>

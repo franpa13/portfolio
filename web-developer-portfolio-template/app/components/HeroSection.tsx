@@ -1,12 +1,20 @@
 "use client"
 import React from "react";
-import SocialLinks from "./SocialLinks";
+import SocialLinks, { SocialLinksType } from "./SocialLinks";
 import { Rocket, Laptop, Code2, CalendarCheck } from "lucide-react";
 import { SiReact } from "@icons-pack/react-simple-icons";
 import { motion } from 'framer-motion';
 import Image from "next/image";
-
+import { FileText, Mail, Linkedin } from 'lucide-react';
+import { SiGithub, SiTiktok } from '@icons-pack/react-simple-icons';
 export const HeroSection = () => {
+	const socials: SocialLinksType[] = [
+		{ name: 'GitHub', icon: SiGithub, href: 'https://github.com/franpa13' },
+		{ name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/francisco-paredes-354a2b26b/' },
+		{ name: 'CV', icon: FileText, href: 'https://drive.google.com/file/d/1xy7i1yEzV8OM66dRfZ39N_1mlm05Kegk/view?usp=sharing' },
+		{ name: 'Email', icon: Mail, href: 'mailto:franpa619@gmail.com' },
+		{ name: 'TikTok(Creador de contenido sobre programacion)', icon: SiTiktok, href: 'https://www.tiktok.com/@jujedev?is_from_webapp=1&sender_device=pc' },
+	];
 	return (
 		<div id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
 			{/* Fondo animado con grilla */}
@@ -41,16 +49,16 @@ export const HeroSection = () => {
 					whileInView={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
 					viewport={{ once: true }}
-					className=" relative  w-36 h-36 sm:w-40 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
+					className=" relative  w-36 h-36 sm:w-40 mb-4 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
 				>
 					{/* Glow animado detrás de la foto */}
-					<div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/40 to-pink-500/40 blur-2xl animate-pulse-slow"></div>
+					<div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/40 to-pink-500/40 blur-xl animate-pulse-slow"></div>
 
 					<Image
 						src="/perfi2.png"
 						alt="profile"
 						fill
-						className="object-cover ml-2  transition duration-500"
+						className="object-cover ml-1 lg:ml-2 transition duration-500"
 					/>
 				</motion.div>
 				<motion.div
@@ -62,7 +70,7 @@ export const HeroSection = () => {
 				>
 					{/* Nombre */}
 					<div className="relative inline-block px-4 sm:px-0">
-						<div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur-xl opacity-75"></div>
+						<div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur-lg opacity-75"></div>
 						<h1 className="relative text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300 pb-2">
 							Francisco Javier Paredes
 						</h1>
@@ -78,16 +86,14 @@ export const HeroSection = () => {
 								</h2>
 								<span className="h-[1px] w-8 sm:w-12 bg-blue-500"></span>
 							</div>
-							<p className="text-sm lg:text-base sm:text-lg text-gray-400 max-w-xl px-1 sm:px-0">
+							<p className="text-xs lg:text-base sm:text-lg text-gray-400 max-w-xl px-1 sm:px-0">
 								Especializado en Desarrollo Frontend, creando experiencias digitales únicas con tecnologías web modernas.
 							</p>
-
-
 						</div>
 					</div>
 
 					{/* CTA Buttons */}
-					<div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-8 sm:mt-12 px-4 sm:px-0">
+					<div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-4 mt-8 sm:mt-12 px-4 sm:px-0">
 						<a href="#work" className="group relative inline-flex items-center justify-center">
 							<div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur opacity-75 group-hover:opacity-100 transition"></div>
 							<span className="relative px-6 sm:px-8 py-2 lg:py-3 bg-[#161B22] rounded-full inline-flex items-center justify-center w-full sm:w-auto">
@@ -106,12 +112,12 @@ export const HeroSection = () => {
 						</a>
 					</div>
 					{/* Redes sociales */}
-					<SocialLinks />
+					<SocialLinks socials={socials} />
 				</motion.div>
 			</div>
 
 			{/* Indicador scroll */}
-			<div className="absolute bottom-8 inset-x-0 flex flex-col items-center animate-bounce">
+			<div className="absolute bottom-3 lg:bottom-8 inset-x-0 flex flex-col items-center animate-bounce">
 				<span className="text-gray-400 text-sm mb-2 text-center">
 					Desplázate para explorar
 				</span>

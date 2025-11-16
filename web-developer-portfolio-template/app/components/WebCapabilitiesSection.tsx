@@ -57,7 +57,7 @@ export const WebCapabilitiesSection = () => {
 	const minWidth = isSmallScreen ? "90px" : "150px";
 
 	return (
-		<section className="py-5 px-0 relative overflow-hidden">
+		<section className="py-5 relative overflow-hidden">
 			{/* Elementos decorativos de fondo */}
 
 
@@ -70,10 +70,11 @@ export const WebCapabilitiesSection = () => {
 					subtitleColor="#FFD700"
 					gradientFrom="from-blue-400"
 					gradientTo="to-purple-500"
+					className="px-4"
 				/>
 
 				{/* Marquee optimizado para diferentes tamaños de pantalla */}
-				<div className="overflow-hidden py-4 relative">
+				<div className="overflow-hidden py-0 lg:py-4 relative">
 
 
 					<motion.div
@@ -88,7 +89,7 @@ export const WebCapabilitiesSection = () => {
 						{optimizedStack.map(({ icon: Icon, name, color }, i) => (
 							<motion.button
 								key={i}
-								className="flex flex-col items-center rounded-md justify-center p-3 rounded group transition-all duration-300 relative overflow-hidden"
+								className="flex flex-col items-center rounded-md justify-center p-3  group transition-all duration-300 relative overflow-hidden"
 								style={{ minWidth }}
 								whileHover={{
 									y: -5,
