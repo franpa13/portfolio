@@ -49,7 +49,7 @@ export const HeroSection = () => {
 					whileInView={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
 					viewport={{ once: true }}
-					className=" relative  w-36 h-36 sm:w-40 mb-4 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
+					className=" relative  w-36 h-36 sm:w-40 md:mt-10 mb-0 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
 				>
 					{/* Glow animado detrás de la foto */}
 					<div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/40 to-pink-500/40 blur-xl animate-pulse-slow"></div>
@@ -58,7 +58,7 @@ export const HeroSection = () => {
 						src="/perfi2.png"
 						alt="profile"
 						fill
-						className="object-cover ml-1 lg:ml-2 transition duration-500"
+						className="object-cover ml-1  lg:ml-2 transition duration-500"
 					/>
 				</motion.div>
 				<motion.div
@@ -69,8 +69,8 @@ export const HeroSection = () => {
 					className="text-center space-y-6"
 				>
 					{/* Nombre */}
-					<div className="relative inline-block px-4 sm:px-0">
-						<div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur-lg opacity-75"></div>
+					<div className="relative inline-block px-4 my-6 sm:px-0">
+						<div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur-3xl opacity-75"></div>
 						<h1 className="relative text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300 pb-2">
 							Francisco Javier Paredes
 						</h1>

@@ -26,7 +26,7 @@ export const experiences: ExperienceCardProps[] = [
 		],
 		iconCompany: '/swaplyar.jpg',
 		hrefCompany: 'https://www.linkedin.com/company/swaplyar/posts/?feedView=all',
-		stack: ["Next.js", "Tailwind CSS", "Typescript"],
+		stack: ["Next.js", "Tailwind", "Typescript"],
 		methodologies: ["Scrum"],
 	},
 	{
@@ -59,7 +59,7 @@ export const experiences: ExperienceCardProps[] = [
 			},
 		],
 		iconCompany: '/independiente.png',
-		stack: ["React.js", "Tailwind CSS", "Zustand", "Material UI"],
+		stack: ["React","Next.js", "Tailwind", "Zustand", "Material UI"],
 		methodologies: ["Scrum"],
 	},
 
@@ -88,7 +88,7 @@ export const experiences: ExperienceCardProps[] = [
 					"CRM desarrollado para una empresa en Estados Unidos. El administrador podía crear workspaces y asignar tareas a empleados. Me encargué de la implementación del módulo de gestión de tareas, incluyendo status, fecha de entrega, prioridad y flujo de trabajo dinámico.",
 			},
 		],
-		stack: ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Zustand"],
+		stack: ["Next.js", "Typescript", "React", "Tailwind", "Zustand"],
 		methodologies: ["Scrum"],
 		iconCompany: '/novadeha.jpg',
 		hrefCompany: "https://www.linkedin.com/company/novadeha-group/posts/?feedView=all"
@@ -113,7 +113,7 @@ export const experiences: ExperienceCardProps[] = [
 			},
 		],
 		iconCompany: '/destored.jpg',
-		stack: ["React.js", "Tailwind CSS", "JavaScript"],
+		stack: ["React", "Tailwind", "Redux", "Material UI"],
 		methodologies: ["Scrum"],
 		hrefCompany: "https://www.linkedin.com/company/destored/posts/?feedView=all"
 	},

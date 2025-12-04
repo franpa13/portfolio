@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Award, FolderKanban, Code2, Workflow, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { techIcons } from "./TechIcons";
 
 // Tipado de props para proyectos
 type Project = {
@@ -158,9 +159,9 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
                 {stack.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-gray-200 px-3 py-1 rounded-md text-xs border border-blue-500/30"
+                    className="bg-gradient-to-r  from-blue-500/20 to-purple-500/20 px-2 py-1 rounded text-gray-200 "
                   >
-                    {tech}
+                  {techIcons[tech]?.icon}
                   </span>
                 ))}
               </div>

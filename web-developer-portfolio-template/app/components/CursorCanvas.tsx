@@ -88,6 +88,7 @@ export const CursorCanvas = () => {
       
       if (isClickable) {
         targetCircleSizeRef.current = 15; // Tamaño más pequeño para elementos clickeables
+      
       } else {
         targetCircleSizeRef.current = 30; // Tamaño normal
       }

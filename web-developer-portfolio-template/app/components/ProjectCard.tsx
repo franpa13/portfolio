@@ -3,9 +3,10 @@ import Image from "next/image";
 import { Lock, Eye, Code } from "lucide-react";
 
 export type ProjectProps = {
+  id: string;
   title: string;
   description: string;
-  image: string;
+  image: string[];
   badge?: "Proyecto Freelance" | "Proyecto Empresarial" | "Proyecto Personal";
   privateCode?: boolean;
   stack?: string[];
@@ -34,7 +35,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({
       {/* Imagen */}
       <div className="relative w-full h-48 flex-shrink-0">
         <Image
-          src={image}
+          src={image[0]}
           alt={title}
           fill
           className="object-contain"

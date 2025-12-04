@@ -113,7 +113,6 @@ export const BackgroundCanvas = () => {
                 left: 0,
                 width: "100%",
                 height: "100%",
-
                 background: "#0d0d0d",
             }}
         />
