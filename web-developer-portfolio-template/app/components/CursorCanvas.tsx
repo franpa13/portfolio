@@ -42,21 +42,21 @@ export const CursorCanvas = () => {
         circleRef.current.x + circleSizeRef.current,
         circleRef.current.y + circleSizeRef.current
       );
-      gradient.addColorStop(0, "rgba(59, 130, 246, 0.8)"); // blue-500
-      gradient.addColorStop(0.5, "rgba(168, 85, 247, 0.8)"); // purple-500
-      gradient.addColorStop(1, "rgba(236, 72, 153, 0.8)"); // pink-500
+      gradient.addColorStop(0, "rgba(59, 130, 246, 1)"); // blue-500
+      gradient.addColorStop(0.5, "rgba(168, 85, 247, 1)"); // purple-500
+      gradient.addColorStop(1, "rgba(236, 72, 153, 1)"); // pink-500
 
       ctx.strokeStyle = gradient;
       ctx.lineWidth = 1;
-      ctx.shadowColor = "rgba(59, 130, 246, 0.6)";
+      ctx.shadowColor = "rgba(59, 130, 246, 1)";
       ctx.shadowBlur = 10;
       ctx.beginPath();
       ctx.arc(circleRef.current.x, circleRef.current.y, circleSizeRef.current, 0, Math.PI * 2);
       ctx.stroke();
 
       // Punto central con color azul similar al HeroSection
-      ctx.fillStyle = "rgba(168, 85, 247, 0.8)"; // blue-500
-      ctx.shadowColor = "rgba(59, 130, 246, 0.7)";
+      ctx.fillStyle = "rgba(168, 85, 247, 1)"; // blue-500
+      ctx.shadowColor = "rgba(59, 130, 246, 1)";
       ctx.shadowBlur = 8;
       ctx.beginPath();
       ctx.arc(mouseRef.current.x, mouseRef.current.y, 3, 0, Math.PI * 2);

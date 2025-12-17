@@ -25,14 +25,14 @@ export const HeroSection = () => {
 			{/* Íconos flotantes */}
 			<div className="absolute inset-0 overflow-hidden">
 				{[
-					{ Icon: Code2, delay: "0s", position: "top-20 left-1/4" },
+					{ Icon: Code2, delay: "0s", position: "top-20 left-1/4 " },
 					{ Icon: Rocket, delay: "2s", position: "top-40 right-1/3" },
 					{ Icon: Laptop, delay: "0s", position: "bottom-32 left-1/3" },
 					{ Icon: SiReact, delay: "3s", position: "bottom-20 right-1/4" },
 				].map((item, index) => (
 					<div
 						key={index}
-						className={`absolute ${item.position} animate-float opacity-40 text-blue-400`}
+						className={`absolute ${item.position} animate-float opacity-50 text-white`}
 						style={{ animationDelay: item.delay }}
 					>
 						{/* Tamaño responsivo: pequeño en sm, mediano en md, grande en lg */}

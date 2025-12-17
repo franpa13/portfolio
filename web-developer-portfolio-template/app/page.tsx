@@ -17,7 +17,7 @@ export default function WebDeveloperPortfolio() {
 				<ProjectsSection />
 				<WebCapabilitiesSection />
 				<ContactSection />
-				<Footer  />
+				<Footer />
 			</GoToHero>
 
 		</main>

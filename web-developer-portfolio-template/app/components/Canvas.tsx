@@ -30,7 +30,7 @@ export const BackgroundCanvas = () => {
         let height = canvas.height = window.innerHeight;
 
         const particles: Particle[] = [];
-        const maxParticles = width > 768 ? 85 : 18;
+        const maxParticles = width > 768 ? 80 : 35;
 
         class CanvasParticle implements Particle {
             x: number;
@@ -49,13 +49,14 @@ export const BackgroundCanvas = () => {
                 this.speedY = Math.random() * 0.5 - 0.25;
 
                 // Asignar una opacidad aleatoria entre 0.2 y 0.7
-                this.opacity = 0.19; // 0.3 → 0.55
+                this.opacity = 0.18; // 0.3 → 0.55
 
 
                 // Colores posibles para las partículas
                 const colors = [
                     "80,150,255",   // azul suave
-                    "170,130,255"   // violeta suave
+                    "170,130,255",
+                     "128,128,128"       // violeta suave
                 ];
                 // Asignar un color aleatorio
                 this.color = colors[Math.floor(Math.random() * colors.length)];
@@ -74,7 +75,7 @@ export const BackgroundCanvas = () => {
                     // Dibujar con el color y la opacidad de la partícula
                     ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
                     ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 5);
                     ctx.fill();
                 }
             }
