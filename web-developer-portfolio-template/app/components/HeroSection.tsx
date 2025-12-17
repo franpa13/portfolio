@@ -65,7 +65,7 @@ export const HeroSection = () => {
 
 
 					<Image
-						src="/yo_avatar.png"
+						src="/yo_avatar.jpeg"
 						alt="profile"
 						fill
 						priority
