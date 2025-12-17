@@ -7,11 +7,12 @@ import { ProjectsGrid } from "./ProjectsGrid";
 export const ProjectsSection = () => {
 
   return (
-    <section id="work" className="py-3  px-4 scroll-mt-20">
+    <section id="work" className="my-10 px-4 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
 
         <SectionHeader
-          subtitle=""
+        icon="/gifs/cohete.gif"
+         
           title=""
           highlightedText="Proyectos Destacados"
           description="Una selección de mis trabajos más destacados, desde plataformas empresariales hasta proyectos técnicos personales."

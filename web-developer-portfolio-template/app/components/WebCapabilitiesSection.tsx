@@ -57,15 +57,16 @@ export const WebCapabilitiesSection = () => {
 	const minWidth = isSmallScreen ? "90px" : "150px";
 
 	return (
-		<section className="py-5 relative overflow-hidden">
+		<section className="py-5 my-24 relative overflow-hidden">
 			{/* Elementos decorativos de fondo */}
 
 
 			<div className="max-w-full  mx-auto relative z-10">
 				<SectionHeader
-					subtitle=""
+				icon="/gifs/tecnologia.gif"
+	
 					title=""
-					highlightedText="Tech Stack"
+					highlightedText="Tecnologías que uso día a día"
 					description="Principales tecnologías que forman parte de mi día a día como desarrollador."
 					subtitleColor="#FFD700"
 					gradientFrom="from-blue-400"

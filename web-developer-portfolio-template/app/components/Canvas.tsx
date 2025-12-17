@@ -8,6 +8,10 @@ interface Particle {
     size: number;
     speedX: number;
     speedY: number;
+    // color stored as "r,g,b" (e.g. "255,255,255")
+    color: string;
+    // opacity value 0..1
+    opacity: number;
     update: () => void;
     draw: () => void;
 }
@@ -26,7 +30,7 @@ export const BackgroundCanvas = () => {
         let height = canvas.height = window.innerHeight;
 
         const particles: Particle[] = [];
-        const maxParticles = width > 768 ? 50 : 18;
+        const maxParticles = width > 768 ? 85 : 18;
 
         class CanvasParticle implements Particle {
             x: number;
@@ -34,6 +38,8 @@ export const BackgroundCanvas = () => {
             size: number;
             speedX: number;
             speedY: number;
+            opacity: number;
+            color: string;
 
             constructor() {
                 this.x = Math.random() * width;
@@ -41,6 +47,18 @@ export const BackgroundCanvas = () => {
                 this.size = Math.random() * 2 + 1;
                 this.speedX = Math.random() * 0.5 - 0.25;
                 this.speedY = Math.random() * 0.5 - 0.25;
+
+                // Asignar una opacidad aleatoria entre 0.2 y 0.7
+                this.opacity = 0.19; // 0.3 → 0.55
+
+
+                // Colores posibles para las partículas
+                const colors = [
+                    "80,150,255",   // azul suave
+                    "170,130,255"   // violeta suave
+                ];
+                // Asignar un color aleatorio
+                this.color = colors[Math.floor(Math.random() * colors.length)];
             }
 
             update() {
@@ -53,15 +71,15 @@ export const BackgroundCanvas = () => {
 
             draw() {
                 if (ctx) {
-                    ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+                    // Dibujar con el color y la opacidad de la partícula
+                    ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
                     ctx.beginPath();
                     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                     ctx.fill();
                 }
-
             }
-        }
 
+        }
 
         for (let i = 0; i < maxParticles; i++) {
             particles.push(new CanvasParticle());
@@ -80,7 +98,10 @@ export const BackgroundCanvas = () => {
                     const dy = particles[i].y - particles[j].y;
                     const distance = Math.sqrt(dx * dx + dy * dy);
                     if (distance < 100) {
-                        ctx.strokeStyle = `rgba(255,255,255,${1 - distance / 100})`;
+                        // line alpha depends on distance; adjust baseLineAlpha to change max opacity
+                        const baseLineAlpha = 0.8; // change this to make lines more/less opaque
+                        const alpha = (1 - distance / 130) * baseLineAlpha;
+                        ctx.strokeStyle = `rgba(${particles[j].color}, ${alpha})`;
                         ctx.lineWidth = 0.5;
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
@@ -113,7 +134,7 @@ export const BackgroundCanvas = () => {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                background: "#0d0d0d",
+                background: "#040404",
             }}
         />
     );

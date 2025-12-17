@@ -4,11 +4,12 @@ import emailjs from "@emailjs/browser";
 import SocialLinks, { SocialLinksType } from './SocialLinks';
 import { Snackbar } from './Snackbar';
 import { SiGithub, SiTiktok } from "@icons-pack/react-simple-icons";
+import Image from "next/image";
 
 export const ContactSection = () => {
   const socials: SocialLinksType[] = [
-    { name: 'GitHub', icon: SiGithub , href: 'https://github.com/franpa13' },
-     { name: 'TikTok(Creador de contenido sobre programacion)', icon: SiTiktok, href: 'https://www.tiktok.com/@jujedev?is_from_webapp=1&sender_device=pc' },
+    { name: 'GitHub', icon: SiGithub, href: 'https://github.com/franpa13' },
+    { name: 'TikTok(Creador de contenido sobre programacion)', icon: SiTiktok, href: 'https://www.tiktok.com/@jujedev?is_from_webapp=1&sender_device=pc' },
   ];
 
   const form = useRef<HTMLFormElement>(null);
@@ -74,14 +75,28 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-5 px-4 scroll-mt-20">
+    <section id="contact" className="py-5 my-24 px-4 scroll-mt-20">
       <div className="max-w-4xl mx-auto sm:px-6">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-4xl font-bold text-center text-white">
-            ¿Buscas un <span className="text-transparent bg-clip-text bg-gradient-to-r text-2xl sm:text-4xl from-blue-400 to-purple-500">Desarrollador Web</span>?
+          <h2 className="text-xl flex items-center justify-center gap-1 md:gap-3 sm:text-4xl font-bold text-center text-white">
+            ¿Buscas un <span className="text-transparent bg-clip-text bg-gradient-to-r flex items-center justify-center  sm:text-4xl from-blue-400 to-purple-500">Desarrollador Web ? <Image
+              src={"/gifs/servicio-al-cliente.gif"}
+              width={32}
+              height={32}
+              alt="Icon"
+              className="
+     ml-3 md:ml-5
+          
+          rounded-full
+         w-9 h-9
+           lg:w-14 lg:h-14
+         "/>
+
+            </span>
+
           </h2>
-          <p className="text-sm sm:text-lg text-gray-400  mt-4 leading-relaxed flex flex-col items-center">
+          <p className="text-xs sm:text-lg text-gray-400  mt-8 leading-relaxed flex flex-col items-center">
             Ayudo a empresas y emprendedores a transformar sus ideas en soluciones digitales efectivas.
             Si buscas un desarrollador web que combine creatividad, experiencia y resultados, estás en el lugar correcto.
           </p>
@@ -148,7 +163,7 @@ export const ContactSection = () => {
                 placeholder="Cuéntame sobre tu proyecto..."
               />
             </div>
-            
+
             <div className="flex justify-end">
               <button
                 type="submit"
@@ -158,27 +173,27 @@ export const ContactSection = () => {
                 {isSubmitting ? (
                   <>
                     {/* Spinner */}
-                    <svg 
-                      className="animate-spin h-6 w-6 text-white" 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      fill="none" 
+                    <svg
+                      className="animate-spin h-6 w-6 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
                       viewBox="0 0 24 24"
                     >
-                      <circle 
-                        className="opacity-25" 
-                        cx="12" 
-                        cy="12" 
-                        r="10" 
-                        stroke="currentColor" 
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
                         strokeWidth="4"
                       ></circle>
-                      <path 
-                        className="opacity-75" 
-                        fill="currentColor" 
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
                         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                       ></path>
                     </svg>
- 
+
                   </>
                 ) : (
                   <>
@@ -229,13 +244,13 @@ export const ContactSection = () => {
           </a>
         </div>
 
-        <SocialLinks  socials={socials}></SocialLinks>
+        <SocialLinks socials={socials}></SocialLinks>
       </div>
 
-      <Snackbar 
-        open={snackbar.open} 
-        message={snackbar.message} 
-        type={snackbar.type} 
+      <Snackbar
+        open={snackbar.open}
+        message={snackbar.message}
+        type={snackbar.type}
         onClose={() =>
           setSnackbar((prev) => ({
             ...prev,

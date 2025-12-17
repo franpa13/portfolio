@@ -1,10 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import { ReactElement } from "react";
+import Image from "next/image";
 
 interface SectionHeaderProps {
-    icon?: ReactElement;
-    subtitle: string;
+    icon?: string;
     title: string;
     highlightedText?: string;
     description: string;
@@ -16,7 +15,6 @@ interface SectionHeaderProps {
 
 export const SectionHeader = ({
     icon,
-    subtitle,
     title,
     highlightedText,
     description,
@@ -32,29 +30,58 @@ export const SectionHeader = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-3 mb-2"
+                className="flex flex-row items-center gap-3 mb-2"
                 style={{ color: subtitleColor }}
             >
-                {icon && <div className="text-base md:text-2xl">{icon}</div>}
-                <span className="text-sm font-medium tracking-wider">{subtitle}</span>
+
+
+
             </motion.div>
 
             <motion.h2
-                className="text-2xl sm:text-4xl  font-bold text-center text-white"
+                className="text-xl sm:text-4xl  font-bold text-center text-white "
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 viewport={{ once: true }}
             >
-                {title} {highlightedText && (
-                    <span className={`text-transparent bg-clip-text bg-gradient-to-r ${gradientFrom} ${gradientTo}`}>
+                {title}
+
+                {highlightedText && (
+                    <span
+                        className={`
+      flex items-center gap-4
+      bg-clip-text
+      text-transparent
+      bg-gradient-to-r
+      ${gradientFrom}
+      ${gradientTo}
+    `}
+                    >
                         {highlightedText}
+
+                        <Image
+                            src={icon ? icon : "/gifs/cohete.gif"}
+                            width={32}
+                            height={32}
+                            alt="Icon"
+                            className="
+
+     
+     rounded-full
+    w-9 h-9
+      lg:w-14 lg:h-14
+    "
+                        />
+
+
                     </span>
                 )}
+
             </motion.h2>
 
             <motion.p
-                className="text-sm sm:text-lg text-gray-400 max-w-2xl mt-4 leading-relaxed flex flex-col items-center"
+                className="text-xs sm:text-lg text-gray-400 max-w-2xl mt-4 leading-relaxed flex flex-col items-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}

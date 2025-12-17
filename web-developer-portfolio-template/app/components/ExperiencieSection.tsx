@@ -126,13 +126,14 @@ export const ExperiencieSection = () => {
 			<div className="max-w-6xl mx-auto">
 
 				<SectionHeader
+				icon='/gifs/work.gif'
 					title=""
 					highlightedText="Experiencia Profesional"
 					gradientFrom="from-blue-400"
 					gradientTo="to-purple-500"
 					subtitleColor="#FFD700"
 					description="Más de 1.5 años de experiencia desarrollando aplicaciones web modernas, enfocadas en rendimiento, escalabilidad y experiencias de usuario de alto nivel."
-					subtitle=""
+	
 				/>
 
 				<div className="relative mt-16">

@@ -32,7 +32,6 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   company,
   date,
   location,
-  description,
   achievements = [],
   projects = [],
   stack = [],
@@ -49,7 +48,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   const hasDetails = achievements.length > 0 || projects.length > 0 || stack.length > 0 || methodologies.length > 0;
 
   return (
-    <div   onClick={toggleAccordion} className="bg-[#0d1117] border-none  rounded-2xl p-6 sm:p-8 mb-8 shadow-[0_0_20px_rgba(139,92,246,0.15)] hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
+    <div   onClick={toggleAccordion} className="bg-[#0d1117] border-none  rounded-2xl px-6 sm:px-8 py-3 mb-8 shadow-[0_0_20px_rgba(139,92,246,0.15)] hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
       {/* Encabezado - siempre visible y clickeable */}
       <div
         className="cursor-pointer"
@@ -99,7 +98,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         <p className="text-gray-400 text-sm mb-4">
           {date} · {location}
         </p>
-        <p className="text-gray-300">{description}</p>
+
       </div>
 
       {/* Contenido expandible */}
@@ -185,7 +184,9 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
                 ))}
               </div>
             </div>
+            
           )}
+
         </div>
       )}
     </div>

@@ -49,18 +49,34 @@ export const HeroSection = () => {
 					whileInView={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
 					viewport={{ once: true }}
-					className=" relative  w-36 h-36 sm:w-40 md:mt-10 mb-0 sm:h-40 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.6)] border-4 border-[#0d1117]"
+					className="
+    relative
+    w-36 h-36
+    sm:w-40 sm:h-40
+    lg:w-72 lg:h-72
+    rounded-full
+	md:mt-8
+    overflow-hidden
+    flex items-center justify-center
+    shadow-[0_0_20px_rgba(59,130,246,0.45)]
+  "
 				>
-					{/* Glow animado detrás de la foto */}
-					<div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/40 to-pink-500/40 blur-xl animate-pulse-slow"></div>
+					{/* Fondo interno estilo imagen 2 */}
+
 
 					<Image
-						src="/perfi2.png"
+						src="/yo_avatar.png"
 						alt="profile"
 						fill
-						className="object-cover ml-1  lg:ml-2 transition duration-500"
+						priority
+						className="
+      object-contain
+      scale-[0.9]
+      transition-transform duration-500
+    "
 					/>
 				</motion.div>
+
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
