@@ -65,14 +65,13 @@ export const HeroSection = () => {
 
 
 					<Image
-						src="/yo_avatar.png"
+						src="/me_notebook.jpeg"
 						alt="profile"
 						fill
 						priority
 						className="
-      object-contain
-      scale-[0.9]
-      transition-transform duration-500
+
+     
     "
 					/>
 				</motion.div>
