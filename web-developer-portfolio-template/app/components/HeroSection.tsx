@@ -17,6 +17,7 @@ export const HeroSection = () => {
 	];
 	return (
 		<div id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+			
 			{/* Fondo animado con grilla */}
 			<div className="absolute inset-0 grid-background opacity-20">
 				<div className="grid-overlay animate-pulse-slow"></div>

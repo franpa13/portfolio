@@ -57,7 +57,7 @@ export const WebCapabilitiesSection = () => {
 	const minWidth = isSmallScreen ? "90px" : "150px";
 
 	return (
-		<section className="py-5 my-24 relative overflow-hidden">
+		<section id="tech" className="py-5 my-24 relative overflow-hidden">
 			{/* Elementos decorativos de fondo */}
 
 

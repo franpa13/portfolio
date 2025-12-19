@@ -5,12 +5,13 @@ import { WebCapabilitiesSection } from './components/WebCapabilitiesSection';
 import { ContactSection } from './components/ContactSection';
 import { GoToHero } from './layout/GoToHero';
 import { Footer } from './components/Footer';
+import { Header } from './components/Header';
 
 
 export default function WebDeveloperPortfolio() {
 	return (
 		<main className="min-h-screen bg-[#0D1117] text-white">
-
+			<Header />
 			<HeroSection />
 			<GoToHero>
 				<ExperiencieSection />

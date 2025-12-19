@@ -122,7 +122,7 @@ export const experiences: ExperienceCardProps[] = [
 ];
 export const ExperiencieSection = () => {
 	return (
-		<section className="py-3 sm:py-20 px-4 lg:px-4">
+		<section id="experience" className="py-3 sm:py-20 px-4 lg:px-4">
 			<div className="max-w-6xl mx-auto">
 
 				<SectionHeader

@@ -98,7 +98,7 @@ export default function RootLayout({
 				<BackgroundCanvas />
 				<CursorCanvas></CursorCanvas>
 				{children}
-
+				
 			</body>
 		</html>
 	);
