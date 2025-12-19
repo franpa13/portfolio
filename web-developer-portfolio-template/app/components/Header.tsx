@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect,  useRef } from "react";
 
 const NAV_ITEMS = [
   { id: "hero", label: "Inicio" },
@@ -9,7 +9,7 @@ const NAV_ITEMS = [
 ];
 
 export const Header = () => {
-  const [active, setActive] = useState("hero"); // solo lógica
+
   const isScrollingRef = useRef(false);
 
   const handleAnchorClick = (
@@ -19,7 +19,6 @@ export const Header = () => {
     e.preventDefault();
 
     isScrollingRef.current = true;
-    setActive(id);
 
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -45,11 +44,8 @@ export const Header = () => {
         const visible = entries.filter((e) => e.isIntersecting);
         if (!visible.length) return;
 
-        const mostVisible = visible.reduce((prev, curr) =>
-          curr.intersectionRatio > prev.intersectionRatio ? curr : prev
-        );
 
-        setActive(mostVisible.target.id);
+
       },
       { threshold: [0.3, 0.6] }
     );
