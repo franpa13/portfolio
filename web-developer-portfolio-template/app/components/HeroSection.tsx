@@ -17,7 +17,7 @@ export const HeroSection = () => {
 	];
 	return (
 		<div id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-			
+
 			{/* Fondo animado con grilla */}
 			<div className="absolute inset-0 grid-background opacity-20">
 				<div className="grid-overlay animate-pulse-slow"></div>
@@ -44,7 +44,7 @@ export const HeroSection = () => {
 
 
 			{/* Contenido principal */}
-			<div className="relative  w-full flex flex-col justify-center items-center  gap-y-2 md:flex-row-reverse md:justify-center gap-x-36 flew-wrap lg:items-start z-10  mx-auto px-4">
+			<div className="relative  w-full flex flex-col justify-center items-center  gap-y-2 md:flex-row-reverse md:justify-center gap-x-44 flew-wrap lg:items-center z-10  mx-auto px-4">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.9 }}
 					whileInView={{ opacity: 1, scale: 1 }}
@@ -54,9 +54,9 @@ export const HeroSection = () => {
     relative
     w-36 h-36
     sm:w-40 sm:h-40
-    lg:w-72 lg:h-72
+    lg:w-80 lg:h-80
     rounded-full
-	md:mt-8
+
     overflow-hidden
     flex items-center justify-center
     shadow-[0_0_20px_rgba(59,130,246,0.45)]
@@ -85,25 +85,45 @@ export const HeroSection = () => {
 					className="text-center space-y-6"
 				>
 					{/* Nombre */}
-					<div className="relative inline-block px-4 my-6 sm:px-0">
-						<div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur-3xl opacity-75"></div>
-						<h1 className="relative text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300 pb-2">
+					{/* Nombre */}
+					<div className="relative inline-block px-4 my-3 md:my-8 sm:px-0">
+						<div className="absolute -inset-2 bg-gradient-to-r from-blue-500/40 via-purple-500/40 to-pink-500/40 rounded-3xl blur-2xl opacity-80"></div>
+
+						<h1 className="
+    relative
+    text-3xl sm:text-6xl 
+    font-bold tracking-tight
+    bg-clip-text text-transparent
+    bg-gradient-to-r text-white
+  ">
 							Francisco Javier Paredes
 						</h1>
 					</div>
 
+
 					{/* Rol y descripción */}
-					<div className="space-y-4 sm:space-y-6 mt-6 sm:mt-8">
-						<div className="flex flex-col items-center gap-6">
-							<div className="flex items-center gap-3">
-								<span className="h-[1px] w-8 sm:w-12 bg-blue-500"></span>
-								<h2 className="text-xl sm:text-2xl font-light tracking-wide text-blue-400">
-									Desarrollador Web
+					<div className="space-y-1 sm:space-y-6 mt-0 sm:mt-8">
+						<div className="flex flex-col items-center gap-3 md:gap-6">
+							<div className="flex items-center gap-1 md:gap-4">
+								<span className="h-px text-sm  w-4 sm:w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+
+								<h2 className="
+        text-sm md:text-lg 
+        font-medium tracking-wide
+        text-blue-400
+      ">
+									Desarrollador Fullstack <span className="text-gray-400">con foco en Frontend</span>
 								</h2>
-								<span className="h-[1px] w-8 sm:w-12 bg-blue-500"></span>
+
+								<span className="h-px w-4 sm:w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 							</div>
-							<p className="text-xs lg:text-base sm:text-lg text-gray-400 max-w-xl px-1 sm:px-0">
-								Especializado en Desarrollo Frontend, creando experiencias digitales únicas con tecnologías web modernas.
+							<p className="text-xs lg:text-base sm:text-lg text-gray-400 w-full md:max-w-3xl px-1 sm:px-0">
+								Construyo aplicaciones web modernas orientadas a producto, con foco en el frontend,
+								priorizando performance, arquitectura limpia y una experiencia de usuario sólida
+								utilizando React, Next.js y TypeScript.
+							</p>
+							<p className="text-xs sm:text-sm text-gray-500">
+								Experiencia en SSR, dashboards, optimización de performance y productos reales.
 							</p>
 						</div>
 					</div>
@@ -133,7 +153,7 @@ export const HeroSection = () => {
 			</div>
 
 			{/* Indicador scroll */}
-			<div className="absolute bottom-3 lg:bottom-8 inset-x-0 flex flex-col items-center animate-bounce">
+			<div className="hidden md:flex absolute bottom-3 lg:bottom-8 inset-x-0  flex-col items-center animate-bounce">
 				<span className="text-gray-400 text-sm mb-2 text-center">
 					Desplázate para explorar
 				</span>

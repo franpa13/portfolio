@@ -38,7 +38,7 @@ export default function UniquePageProject() {
       
       {/* Back */}
       <button
-        onClick={() => router.back()}
+        onClick={() => router.push("/")}
         className="flex items-center gap-2 mb-6 text-blue-400 hover:text-blue-500 font-semibold transition"
       >
         <ChevronLeft size={18} />
