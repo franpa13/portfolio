@@ -23,17 +23,7 @@ export const projects: ProjectProps[] = [
 		stack: ["Next Js", "Tailwind CSS", "Typescript", "Material UI" , "Zod"],
 		hrefDeploy: "https://www.swaplyar.com/es/inicio"
 	},
-	// {
-	// 	id: "resurface",
-	// 	title: "Resurface",
-	// 	description:
-	// 		"Plataforma de alquileres vacacionales o no similar a Airbnb para un cliente en Estados Unidos. Me enfoqué en el desarrollo del sistema avanzado de filtros (localidad, tamaño, cantidad de baños, entre otros) para optimizar la búsqueda y experiencia del usuario.",
-	// 	image: ["/resurface.png"],
-	// 	badge: "Proyecto Empresarial",
-	// 	privateCode: true,
-	// 	stack: ["Next.js", "Shadcn", "Typescript", "Zustand"],
 
-	// }
 	{
 		id: "nortec-ecommerce",
 		title: "Nortec - Ecommerce",
@@ -67,16 +57,7 @@ export const projects: ProjectProps[] = [
 		stack: ["React Js", "Material UI", "Redux", "recharts"],
 		hrefDeploy: "https://www.yemasdelsol.com/"
 	},
-	// {
-	// 	id: "workupcloud",
-	// 	title: "WorkupCloud",
-	// 	description:
-	// 		"CRM desarrollado para una empresa en Estados Unidos. El administrador podía crear workspaces y asignar tareas a empleados. Me encargué de la implementación del módulo de gestión de tareas, incluyendo status, fecha de entrega, prioridad y flujo de trabajo dinámico.",
-	// 	image: ["/workoudcloud.png"],
-	// 	badge: "Proyecto Empresarial",
-	// 	privateCode: true,
-	// 	stack: ["React Js", "Typescript", "Shadcn", "Zustand", "zod"],
-	// },
+	
 	{
 		id: "mendoza-news",
 		title: "Mendoza News",
@@ -99,17 +80,6 @@ export const projects: ProjectProps[] = [
 		href: "https://github.com/franpa13/ecommerce-gestor",
 		stack: ["React Js", "Tailwind Css", "Axios", "Node Js", "Express", "PostgreSQL", "Storybook", "TDD", "Docker"],
 		hrefDeploy: "https://github.com/franpa13/ecommerce-gestor"
-	},{
-		id: "todo-app",
-		title: "Todo App",
-		description:
-			"To do list completa donde me encargue de todo el crud completo del backend y frontend.",
-		image: ["/todo/todoapp.png", "/todo/todo1.png", "/todo/todo2.png"],
-		badge: "Proyecto Personal",
-		privateCode: false,
-		href: "https://github.com/franpa13/to-do-list?tab=readme-ov-file",
-		stack: ["React Js", "Node Js", "Express", "Typescript" , "Tailwind", "PostgreSQL", "Axios"],
-
 	},
 	{
 		id: "cafeteria-rimberio",
@@ -123,18 +93,27 @@ export const projects: ProjectProps[] = [
 		stack: ["React Js", "Framer Motion", "Tailwind"],
 		hrefDeploy: "https://landing-page-smoky-rho.vercel.app/"
 	},
-	{
-		id: "school-web",
-		title: "School Web",
+ {
+		id: "workupcloud",
+		title: "WorkupCloud",
 		description:
-			"Plataforma diseñada para optimizar la gestión de calificaciones, asistencias y otros aspectos del rendimiento estudiantil, mejorando la interacción entre docentes y alumnos.",
-		image: ["/school.png"],
-		badge: "Proyecto Personal",
-		privateCode: false,
-		href: "https://github.com/franpa13/landingPage",
-		stack: ["React Js", "Framer Motion", "Tailwind"],
-		hrefDeploy: "https://school-web-flax.vercel.app/"
-	}, {
+			"CRM desarrollado para una empresa en Estados Unidos. El administrador podía crear workspaces y asignar tareas a empleados. Me encargué de la implementación del módulo de gestión de tareas, incluyendo status, fecha de entrega, prioridad y flujo de trabajo dinámico.",
+		image: ["/workoudcloud.png"],
+		badge: "Proyecto Empresarial",
+		privateCode: true,
+		stack: ["React Js", "Typescript", "Shadcn", "Zustand", "zod"],
+	},
+	{
+		id: "resurface",
+		title: "Resurface",
+		description:
+			"Plataforma de alquileres vacacionales o no similar a Airbnb para un cliente en Estados Unidos. Me enfoqué en el desarrollo del sistema avanzado de filtros (localidad, tamaño, cantidad de baños, entre otros) para optimizar la búsqueda y experiencia del usuario.",
+		image: ["/resurface.png"],
+		badge: "Proyecto Empresarial",
+		privateCode: true,
+		stack: ["Next.js", "Shadcn", "Typescript", "Zustand"],
+
+	},{
 		id: "git-search",
 		title: "Git Search",
 		description:
@@ -145,9 +124,30 @@ export const projects: ProjectProps[] = [
 		href: "https://github.com/franpa13/GithubProfile",
 		stack: ["React Js", "Tailwind Css", "Axios"],
 		hrefDeploy: "https://profile-git-jade.vercel.app/"
-	}
+	},{
+		id: "todo-app",
+		title: "Todo App",
+		description:
+			"To do list completa donde me encargue de todo el crud completo del backend y frontend.",
+		image: ["/todo/todoapp.png", "/todo/todo1.png", "/todo/todo2.png"],
+		badge: "Proyecto Personal",
+		privateCode: false,
+		href: "https://github.com/franpa13/to-do-list?tab=readme-ov-file",
+		stack: ["React Js", "Node Js", "Express", "Typescript" , "Tailwind", "PostgreSQL", "Axios"],
 
-
+	},
+	// {
+	// 	id: "school-web",
+	// 	title: "School Web",
+	// 	description:
+	// 		"Plataforma diseñada para optimizar la gestión de calificaciones, asistencias y otros aspectos del rendimiento estudiantil, mejorando la interacción entre docentes y alumnos.",
+	// 	image: ["/school.png"],
+	// 	badge: "Proyecto Personal",
+	// 	privateCode: false,
+	// 	href: "https://github.com/franpa13/landingPage",
+	// 	stack: ["React Js", "Framer Motion", "Tailwind"],
+	// 	hrefDeploy: "https://school-web-flax.vercel.app/"
+	// },
 ];
 
 export const allProjects: ProjectProps[] = [...projects];

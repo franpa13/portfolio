@@ -75,7 +75,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-5 my-36 px-4 scroll-mt-20">
+    <section id="contact" className="py-5 my-0 px-4 scroll-mt-20">
       <div className="max-w-4xl mx-auto sm:px-6">
         {/* Header Section */}
         <div className="text-center mb-12">
