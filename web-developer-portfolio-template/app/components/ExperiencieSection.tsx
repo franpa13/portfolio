@@ -25,7 +25,7 @@ export const experiences: ExperienceCardProps[] = [
 	{
 		role: "Frontend Developer",
 		company: "SwaplyAr",
-		date: "Oct 2025 – Presente",
+		date: "Oct 2025 – Ene 2026",
 		location: "Remoto",
 		description:
 			"Participación en el desarrollo frontend de la plataforma SwaplyAr de intercambio de criptomonedas, enfocándome en la creación de interfaces intuitivas y seguras.",
