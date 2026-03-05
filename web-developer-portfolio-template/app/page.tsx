@@ -14,8 +14,8 @@ export default function WebDeveloperPortfolio() {
 			<Header />
 			<HeroSection />
 			<GoToHero>
-				<ExperiencieSection />
 				<ProjectsSection />
+				<ExperiencieSection />
 				<WebCapabilitiesSection />
 				<ContactSection />
 				<Footer />

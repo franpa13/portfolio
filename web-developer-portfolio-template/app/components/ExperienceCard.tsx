@@ -36,8 +36,8 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   projects = [],
   stack = [],
   methodologies = [],
-  iconCompany = '',
-  hrefCompany = '#',
+  iconCompany = "",
+  hrefCompany = "#",
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -45,75 +45,66 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     setIsExpanded(!isExpanded);
   };
 
-  const hasDetails = achievements.length > 0 || projects.length > 0 || stack.length > 0 || methodologies.length > 0;
+  const hasDetails =
+    achievements.length > 0 ||
+    projects.length > 0 ||
+    stack.length > 0 ||
+    methodologies.length > 0;
 
   return (
-    <div   onClick={toggleAccordion} className="bg-[#0d1117] border-none  rounded-2xl px-6 sm:px-8 py-3 mb-8 shadow-[0_0_20px_rgba(139,92,246,0.15)] hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
+    <div
+      onClick={toggleAccordion}
+      className="bg-[#0f141b] border border-[#242b36] rounded-xl px-5 sm:px-6 py-4 mb-6 transition-colors duration-200 hover:border-[#364154]"
+    >
       {/* Encabezado - siempre visible y clickeable */}
-      <div
-        className="cursor-pointer"
-      
-      >
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-          <h3 className="text-xl sm:text-2xl font-bold text-white">
-            {role}
-          </h3>
-          <div className="flex items-center gap-2 my-2 xl:my-0 transition-all duration-300">
-            <span className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-400 text-xs px-3 py-1 rounded-full border border-blue-500/30">
+      <div className="cursor-pointer">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+          <h3 className="text-lg sm:text-xl font-semibold text-white">{role}</h3>
+          <div className="flex items-center gap-2 my-2 xl:my-0">
+            <span className="text-gray-300 text-xs px-2 py-1 rounded-md border border-[#313a47] bg-[#121924]">
               Tiempo completo
             </span>
-            {hasDetails && (
-              isExpanded ? (
-                <ChevronUp size={20} className="text-blue-400 transition-all duration-300" />
+            {hasDetails &&
+              (isExpanded ? (
+                <ChevronUp size={18} className="text-gray-400 transition-all duration-200" />
               ) : (
-                <ChevronDown size={20} className="text-blue-400 transition-all duration-300" />
-              )
-            )}
+                <ChevronDown size={18} className="text-gray-400 transition-all duration-200" />
+              ))}
           </div>
         </div>
-        <div className="flex justify-between mt-7 items-center">
-          <p className="text-blue-400 font-medium mb-1">{company}</p>
+
+        <div className="flex justify-between mt-4 items-center">
+          <p className="text-gray-100 font-medium mb-1">{company}</p>
 
           <Link
             href={hrefCompany}
             target="_blank"
             rel="noopener noreferrer"
-            className="group w-10 h-10 lg:w-12 lg:h-12 relative  rounded-lg overflow-hidden border border-blue-500/30"
+            className="w-10 h-10 lg:w-11 lg:h-11 relative rounded-md overflow-hidden border border-[#313a47]"
           >
-            <Image
-              src={iconCompany}
-              alt={`${company} logo`}
-              fill
-              className="object-cover"
-            />
-
-            {/* Tooltip */}
-            <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs text-white bg-blue-600/90 px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-              Visitar startup
-            </span>
+            <Image src={iconCompany} alt={`${company} logo`} fill className="object-cover" />
           </Link>
         </div>
 
-
         <p className="text-gray-400 text-sm mb-4">
-          {date} · {location}
+          {date} - {location}
         </p>
-
       </div>
 
       {/* Contenido expandible */}
       {hasDetails && (
         <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[2000px] opacity-100 mt-6" : "max-h-0 opacity-0"
-            }`}
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${
+            isExpanded ? "max-h-[2000px] opacity-100 mt-6" : "max-h-0 opacity-0"
+          }`}
         >
           {/* Logros principales */}
           {achievements.length > 0 && (
             <div className="mb-6 text-sm md:text-base">
-              <h4 className="flex items-center gap-2 text-sm font-semibold text-gray-400 mb-3">
-                <Award size={16} className="text-yellow-400" /> Logros principales
+              <h4 className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-3">
+                <Award size={16} className="text-gray-400" /> Logros principales
               </h4>
-              <ul className=" list-inside list-none text-gray-300 space-y-3">
+              <ul className="list-inside list-none text-gray-300 space-y-2">
                 {achievements.map((item, i) => (
                   <li key={i}>- {item}</li>
                 ))}
@@ -124,23 +115,19 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
           {/* Proyectos destacados */}
           {projects.length > 0 && (
             <div className="mb-6">
-              <h4 className="flex items-center gap-2 text-sm font-semibold text-gray-400 mb-3">
-                <FolderKanban size={16} className="text-blue-400" /> Proyectos destacados
+              <h4 className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-3">
+                <FolderKanban size={16} className="text-gray-400" /> Proyectos destacados
               </h4>
               <div className="flex flex-wrap gap-4">
                 {projects.map((project, i) => (
                   <div
                     key={i}
-                    className="bg-[#161B22] border border-[#21262d] rounded-lg p-4 hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(139,92,246,0.4)] transition-all"
+                    className="bg-[#121821] border border-[#262f3b] rounded-lg p-4 transition-colors duration-200 hover:border-[#3a4658]"
                   >
                     <h5 className="font-medium text-white">{project.name}</h5>
-                    <p className="text-gray-400 text-sm mb-2">
-                      {project.description}
-                    </p>
+                    <p className="text-gray-400 text-sm mb-2">{project.description}</p>
                     {project.highlight && (
-                      <p className="text-xs text-blue-400 font-medium">
-                        {project.highlight}
-                      </p>
+                      <p className="text-xs text-gray-300 font-medium">{project.highlight}</p>
                     )}
                   </div>
                 ))}
@@ -148,45 +135,44 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
             </div>
           )}
 
-          {/* Stack tecnológico */}
+          {/* Stack tecnologico */}
           {stack.length > 0 && (
             <div className="mb-4">
-              <h4 className="flex items-center gap-2 text-sm font-semibold text-gray-400 mb-2">
-                <Code2 size={16} className="text-green-400" /> Stack tecnológico
+              <h4 className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-2">
+                <Code2 size={16} className="text-gray-400" /> Stack tecnologico
               </h4>
               <div className="flex flex-wrap gap-2">
                 {stack.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gradient-to-r  from-blue-500/20 to-purple-500/20 px-2 py-1 rounded text-gray-200 "
+                    className="bg-[#121924] border border-[#313a47] px-2 py-1 rounded text-gray-200"
+                    title={tech}
                   >
-                  {techIcons[tech]?.icon}
+                    {techIcons[tech]?.icon ?? tech}
                   </span>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Metodologías */}
+          {/* Metodologias */}
           {methodologies.length > 0 && (
             <div>
-              <h4 className="flex items-center gap-2 text-sm font-semibold text-gray-400 mb-2">
-                <Workflow size={16} className="text-purple-400" /> Metodologías
+              <h4 className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-2">
+                <Workflow size={16} className="text-gray-400" /> Metodologias
               </h4>
               <div className="flex flex-wrap gap-2">
                 {methodologies.map((method, i) => (
                   <span
                     key={i}
-                    className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-gray-200 px-3 py-1 rounded-md text-xs border border-purple-500/30"
+                    className="bg-[#121924] text-gray-200 px-3 py-1 rounded-md text-xs border border-[#313a47]"
                   >
                     {method}
                   </span>
                 ))}
               </div>
             </div>
-            
           )}
-
         </div>
       )}
     </div>

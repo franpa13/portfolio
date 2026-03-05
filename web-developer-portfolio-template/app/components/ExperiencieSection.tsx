@@ -5,6 +5,24 @@ import { SectionHeader } from './SectionHeader';
 
 export const experiences: ExperienceCardProps[] = [
 	{
+		role: "Frontend Web Developer",
+		company: "Corralon El Mercado",
+		date: "Ene 2026 - Actualidad",
+		location: "Jujuy, Argentina (Hibrido)",
+		description:
+			"Desarrollo e implementacion de interfaces web escalables para sistemas de gestion con Next.js, TypeScript y React.",
+		achievements: [
+			"Integracion y manejo eficiente de datos con React Query y Axios",
+			"Validacion robusta de formularios y datos con Zod",
+			"Construccion de componentes reutilizables con shadcn/ui",
+			"Enfoque constante en rendimiento, mantenibilidad y experiencia de usuario",
+		],
+		iconCompany: "/elmercado.jpg",
+		hrefCompany: "https://www.linkedin.com/company/corralon-el-mercado-ab-construcciones/people/",
+		stack: ["Next.js", "Typescript", "React", "Axios", "Zod", "Shadcn"],
+		methodologies: ["Scrum"],
+	},
+	{
 		role: "Frontend Developer",
 		company: "SwaplyAr",
 		date: "Oct 2025 – Presente",
@@ -132,7 +150,7 @@ export const ExperiencieSection = () => {
 					gradientFrom="from-blue-400"
 					gradientTo="to-purple-500"
 					subtitleColor="#FFD700"
-					description="Más de 1.5 años de experiencia desarrollando aplicaciones web modernas, enfocadas en rendimiento, escalabilidad y experiencias de usuario de alto nivel."
+					description="Más de 2 años de experiencia desarrollando aplicaciones web modernas, enfocadas en rendimiento, escalabilidad y experiencias de usuario de alto nivel."
 	
 				/>
 

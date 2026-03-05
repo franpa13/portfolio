@@ -18,8 +18,6 @@ const NAV_ITEMS = [
 
 export const Header = () => {
   const isScrollingRef = useRef(false);
-
-
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
