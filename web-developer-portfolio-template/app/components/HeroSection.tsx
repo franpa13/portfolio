@@ -108,11 +108,11 @@ export const HeroSection = () => {
 								<span className="h-px text-sm  w-4 sm:w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 
 								<h2 className="
-        text-sm md:text-lg 
+        text-xs md:text-lg 
         font-medium tracking-wide
         text-blue-400
       ">
-									Desarrollador Fullstack <span className="text-gray-400">con foco en Frontend</span>
+									Desarrollador Web Fullstack <span className="text-gray-400">con foco en Frontend</span>
 								</h2>
 
 								<span className="h-px w-4 sm:w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />

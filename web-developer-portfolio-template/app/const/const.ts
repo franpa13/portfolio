@@ -12,6 +12,7 @@ export const projects: ProjectProps[] = [
 		stack: ["React", "Zustand", "Tailwind CSS", "Axios", "Material UI", "Framer Motion"],
 		hrefDeploy: "https://progressus-client.vercel.app/"
 	},
+
 	{
 		id: "swaplyar",
 		title: "SwaplyAr",
@@ -20,66 +21,8 @@ export const projects: ProjectProps[] = [
 		image: ["/swaplyAr/swaplyarweb.png", "/swaplyAr/swaply1.png"],
 		badge: "Proyecto Empresarial",
 		privateCode: true,
-		stack: ["Next Js", "Tailwind CSS", "Typescript", "Material UI" , "Zod"],
+		stack: ["Next Js", "Tailwind CSS", "Typescript", "Material UI", "Zod"],
 		hrefDeploy: "https://www.swaplyar.com/es/inicio"
-	},
-
-	{
-		id: "nortec-ecommerce",
-		title: "Nortec - Ecommerce",
-		description:
-			"Ecommerce para Nortec donde me encargue del back y front con Next Js y Node Js ",
-		image: ["https://i.postimg.cc/jjjCNJYQ/nortece.png", "/nortec-web/nortec1.png", "/nortec-web/nortec2.png"],
-		badge: "Proyecto Freelance",
-		privateCode: true,
-		stack: ["Next Js", "Tailwind", "Typescript", "Axios" , "Node Js", "Express", "PostgreSQL"],
-		hrefDeploy: "https://ecommerce-nortec.vercel.app/"
-	},
-	{
-		id: "nortec-dashboard",
-		title: "NortEc Dashboard",
-		description:
-			"Sistema de gestión de stock, ventas y compras de artículos tecnológicos. Diseñado para un único rol administrativo, permitiendo la administración completa de inventario, operaciones y datos comerciales desde un panel centralizado. USUARIO: admin , CONTRASEÑA: panchi123",
-		image: ["/nortec-admin/nortec.png", "/nortec-admin/nortecadm1.png", "/nortec-admin/nortecadm2.png"],
-		badge: "Proyecto Freelance",
-		privateCode: true,
-		stack: ["React Js", "Typescript", "Shadcn", "Zustand" , "Tailwind"],
-		hrefDeploy: "https://nortec-dash.vercel.app/"
-	},
-	{
-		id: "yemas-del-sol",
-		title: "Yemas Del Sol",
-		description:
-			"Sistema de gestión para una granja exportadora de huevos con dos roles principales (administrador y empleado). Me enfoqué en el desarrollo del dashboard administrativo, implementando visualizaciones interactivas con gráficos para optimizar el control y análisis de la producción.",
-		image: ["/yemas/yemas.png", "/yemas/yemas1.png", "/yemas/yemas2.png"],
-		badge: "Proyecto Empresarial",
-		privateCode: true,
-		stack: ["React Js", "Material UI", "Redux", "recharts"],
-		hrefDeploy: "https://www.yemasdelsol.com/"
-	},
-	
-	{
-		id: "mendoza-news",
-		title: "Mendoza News",
-		description:
-			"Portal de noticias para un diario de Mendoza. Me encargué del diseño responsive de la interfaz y de la integración eficiente de múltiples endpoints en el panel de administración, garantizando una experiencia de usuario optimizada y una gestión fluida de contenidos.",
-		image: ["/MendozaNews.png"],
-		badge: "Proyecto Empresarial",
-		privateCode: true,
-		stack: ["React Js", "Redux", "React Scroll"],
-		hrefDeploy: "https://mnews.com.ar/"
-	},
-	{
-		id: "tecno-cart",
-		title: "Tecno Cart",
-		description:
-			"Ecommerce completo que desarrolle con carrito de compras, filtros y busqueda de productos. Realizado en el curso fullstack avanzado de Software Factory. Implementa Docker, Dominio, TDD y Storybook",
-		image: ["/tecno-cart/tecno1.png", "/tecno-cart/tecno2.png", "/tecno-cart/tecno3.png", "/tecno-cart/tecno4.png", "/tecno-cart/tecno5.png"],
-		badge: "Proyecto Personal",
-		privateCode: false,
-		href: "https://github.com/franpa13/ecommerce-gestor",
-		stack: ["React Js", "Tailwind Css", "Axios", "Node Js", "Express", "PostgreSQL", "Storybook", "TDD", "Docker"],
-		hrefDeploy: "https://github.com/franpa13/ecommerce-gestor"
 	},
 	{
 		id: "cafeteria-rimberio",
@@ -93,7 +36,67 @@ export const projects: ProjectProps[] = [
 		stack: ["React Js", "Framer Motion", "Tailwind"],
 		hrefDeploy: "https://landing-page-smoky-rho.vercel.app/"
 	},
- {
+	{
+		id: "yemas-del-sol",
+		title: "Yemas Del Sol",
+		description:
+			"Sistema de gestión para una granja exportadora de huevos con dos roles principales (administrador y empleado). Me enfoqué en el desarrollo del dashboard administrativo, implementando visualizaciones interactivas con gráficos para optimizar el control y análisis de la producción.",
+		image: ["/yemas/yemas.png", "/yemas/yemas1.png", "/yemas/yemas2.png"],
+		badge: "Proyecto Empresarial",
+		privateCode: true,
+		stack: ["React Js", "Material UI", "Redux", "recharts"],
+		hrefDeploy: "https://www.yemasdelsol.com/"
+	},
+	{
+		id: "mendoza-news",
+		title: "Mendoza News",
+		description:
+			"Portal de noticias para un diario de Mendoza. Me encargué del diseño responsive de la interfaz y de la integración eficiente de múltiples endpoints en el panel de administración, garantizando una experiencia de usuario optimizada y una gestión fluida de contenidos.",
+		image: ["/MendozaNews.png"],
+		badge: "Proyecto Empresarial",
+		privateCode: true,
+		stack: ["React Js", "Redux", "React Scroll"],
+		hrefDeploy: "https://mnews.com.ar/"
+	},
+{
+		id: "crm-lla-jujuy",
+		title: "CRM LLA Jujuy",
+		description:
+			"CRM desarrollado para la filial de La Libertad Avanza en Jujuy, orientado a centralizar la gestión de contactos, seguimiento territorial y organización operativa desde un dashboard privado. Me encargué del desarrollo de la interfaz y de la experiencia del panel para agilizar el trabajo interno del equipo.",
+		image: ["/crm-lla/crm-lla.png", "/crm-lla/crm-lla2.png", "/crm-lla/carm-lla3.png"],
+		badge: "Proyecto Empresarial",
+		privateCode: true,
+		stack: ["React Js", "Typescript", "Tailwind", "Shadcn"],
+		hrefDeploy: "https://dashboard.crmllajujuy.org/"
+	},
+	{
+		id: "nortec-ecommerce",
+		title: "Nortec - Ecommerce",
+		description:
+			"Ecommerce para Nortec donde me encargue del back y front con Next Js y Node Js ",
+		image: ["https://i.postimg.cc/jjjCNJYQ/nortece.png", "/nortec-web/nortec1.png", "/nortec-web/nortec2.png"],
+		badge: "Proyecto Freelance",
+		privateCode: true,
+		stack: ["Next Js", "Tailwind", "Typescript", "Axios", "Node Js", "Express", "PostgreSQL"],
+		hrefDeploy: "https://ecommerce-nortec.vercel.app/"
+	},
+	{
+		id: "nortec-dashboard",
+		title: "NortEc Dashboard",
+		description:
+			"Sistema de gestión de stock, ventas y compras de artículos tecnológicos. Diseñado para un único rol administrativo, permitiendo la administración completa de inventario, operaciones y datos comerciales desde un panel centralizado. USUARIO: admin , CONTRASEÑA: panchi123",
+		image: ["/nortec-admin/nortec.png", "/nortec-admin/nortecadm1.png", "/nortec-admin/nortecadm2.png"],
+		badge: "Proyecto Freelance",
+		privateCode: true,
+		stack: ["React Js", "Typescript", "Shadcn", "Zustand", "Tailwind"],
+		hrefDeploy: "https://nortec-dash.vercel.app/"
+	},
+
+
+
+
+
+	{
 		id: "workupcloud",
 		title: "WorkupCloud",
 		description:
@@ -112,30 +115,31 @@ export const projects: ProjectProps[] = [
 		badge: "Proyecto Empresarial",
 		privateCode: true,
 		stack: ["Next.js", "Shadcn", "Typescript", "Zustand"],
-
-	},{
-		id: "git-search",
-		title: "Git Search",
-		description:
-			"Proyecto donde interactue con la API de Github para poder obtener informacion del usuario que desees buscar",
-		image: ["/gitsearch/git.png", "/gitsearch/midu.png"],
-		badge: "Proyecto Personal",
-		privateCode: false,
-		href: "https://github.com/franpa13/GithubProfile",
-		stack: ["React Js", "Tailwind Css", "Axios"],
-		hrefDeploy: "https://profile-git-jade.vercel.app/"
-	},{
-		id: "todo-app",
-		title: "Todo App",
-		description:
-			"To do list completa donde me encargue de todo el crud completo del backend y frontend.",
-		image: ["/todo/todoapp.png", "/todo/todo1.png", "/todo/todo2.png"],
-		badge: "Proyecto Personal",
-		privateCode: false,
-		href: "https://github.com/franpa13/to-do-list?tab=readme-ov-file",
-		stack: ["React Js", "Node Js", "Express", "Typescript" , "Tailwind", "PostgreSQL", "Axios"],
-
 	},
+	
+	// }, {
+	// 	id: "git-search",
+	// 	title: "Git Search",
+	// 	description:
+	// 		"Proyecto donde interactue con la API de Github para poder obtener informacion del usuario que desees buscar",
+	// 	image: ["/gitsearch/git.png", "/gitsearch/midu.png"],
+	// 	badge: "Proyecto Personal",
+	// 	privateCode: false,
+	// 	href: "https://github.com/franpa13/GithubProfile",
+	// 	stack: ["React Js", "Tailwind Css", "Axios"],
+	// 	hrefDeploy: "https://profile-git-jade.vercel.app/"
+	// }, {
+	// 	id: "todo-app",
+	// 	title: "Todo App",
+	// 	description:
+	// 		"To do list completa donde me encargue de todo el crud completo del backend y frontend.",
+	// 	image: ["/todo/todoapp.png", "/todo/todo1.png", "/todo/todo2.png"],
+	// 	badge: "Proyecto Personal",
+	// 	privateCode: false,
+	// 	href: "https://github.com/franpa13/to-do-list?tab=readme-ov-file",
+	// 	stack: ["React Js", "Node Js", "Express", "Typescript", "Tailwind", "PostgreSQL", "Axios"],
+
+	// },
 	// {
 	// 	id: "school-web",
 	// 	title: "School Web",
