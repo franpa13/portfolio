@@ -2,6 +2,17 @@ import { ProjectProps } from "../components/ProjectCard";
 
 export const projects: ProjectProps[] = [
 	{
+		id: "vehix",
+		title: "Vehix",
+		description:
+			"Web para una agencia de autos enfocada en mostrar el catalogo de vehiculos, destacar promociones y ofrecer una experiencia moderna para captar potenciales compradores.",
+		image: ["/Vehix/vehix1.png", "/Vehix/vehix2.png", "/Vehix/vehix3.png"],
+		badge: "Proyecto Personal",
+		privateCode: true,
+		stack: ["Next Js", "Tailwind CSS", "Shadcn", "Typescript"],
+		hrefDeploy: "https://vehix-car.vercel.app/",
+	},
+	{
 		id: "progressus-gym",
 		title: "Progressus Gym",
 		description:
