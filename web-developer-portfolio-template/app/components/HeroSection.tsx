@@ -112,18 +112,16 @@ export const HeroSection = () => {
         font-medium tracking-wide
         text-blue-400
       ">
-									Desarrollador Web Fullstack <span className="text-gray-400">con foco en Frontend</span>
+									Desarrollador Web Fullstack <span className="text-gray-400">· Tu idea, hecha realidad</span>
 								</h2>
 
 								<span className="h-px w-4 sm:w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 							</div>
 							<p className="text-xs lg:text-base sm:text-lg text-gray-400 w-full md:max-w-3xl px-1 sm:px-0">
-								Construyo aplicaciones web modernas orientadas a producto, con foco en el frontend,
-								priorizando performance, arquitectura limpia y una experiencia de usuario sólida
-								utilizando React, Next.js y TypeScript.
+								Desarrollo aplicaciones web que hacen crecer tu negocio. Convierto tu idea en un producto digital profesional — con diseño moderno, código de calidad y foco en resultados concretos.
 							</p>
 							<p className="text-xs sm:text-sm text-gray-500">
-								Experiencia en SSR, dashboards, optimización de performance y productos reales.
+								+10 proyectos entregados · Clientes en Argentina y Estados Unidos · Disponible para nuevos proyectos
 							</p>
 						</div>
 					</div>

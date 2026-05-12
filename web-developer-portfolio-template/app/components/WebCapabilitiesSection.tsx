@@ -66,8 +66,8 @@ export const WebCapabilitiesSection = () => {
 				icon="/gifs/tecnologia.gif"
 	
 					title=""
-					highlightedText="Tecnologías que uso día a día"
-					description="Principales tecnologías que forman parte de mi día a día como desarrollador."
+					highlightedText="Herramientas para construir tu producto"
+					description="Trabajo con las tecnologías más demandadas del mercado para entregar productos rápidos, escalables y fáciles de mantener."
 					subtitleColor="#FFD700"
 					gradientFrom="from-blue-400"
 					gradientTo="to-purple-500"

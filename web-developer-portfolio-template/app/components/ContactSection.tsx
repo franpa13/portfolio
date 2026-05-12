@@ -52,7 +52,7 @@ export const ContactSection = () => {
         () => {
           setSnackbar({
             open: true,
-            message: "¡Mensaje enviado con éxito! Respondere a la brevedad, Saludos ! ",
+            message: "¡Mensaje recibido! Te respondo en menos de 24hs. ¡Hablamos pronto!",
             type: "success",
           });
           setFormData({
@@ -80,7 +80,7 @@ export const ContactSection = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-xl flex items-center justify-center gap-1 md:gap-3 sm:text-4xl font-bold text-center text-white">
-            ¿Buscas un <span className="text-transparent bg-clip-text bg-gradient-to-r flex items-center justify-center  sm:text-4xl from-blue-400 to-purple-500">Desarrollador Web ? <Image
+            ¿Listo para <span className="text-transparent bg-clip-text bg-gradient-to-r flex items-center justify-center  sm:text-4xl from-blue-400 to-purple-500">lanzar tu proyecto? <Image
               src={"/gifs/servicio-al-cliente.gif"}
               width={32}
               height={32}
@@ -97,8 +97,8 @@ export const ContactSection = () => {
 
           </h2>
           <p className="text-xs sm:text-lg text-gray-400  mt-8 leading-relaxed flex flex-col items-center">
-            Ayudo a empresas y emprendedores a transformar sus ideas en soluciones digitales efectivas.
-            Si buscas un desarrollador web que combine creatividad, experiencia y resultados, estás en el lugar correcto.
+            Contame tu idea y en 24hs tenés una respuesta. Trabajo con empresas y emprendedores que quieren
+            resultados reales, no solo código. Primera consulta sin costo.
           </p>
         </div>
 
@@ -160,7 +160,7 @@ export const ContactSection = () => {
                 required
                 rows={6}
                 className="w-full px-4 py-3 bg-[#21262D] border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-                placeholder="Cuéntame sobre tu proyecto..."
+                placeholder="Contame tu idea, qué necesitás o en qué te puedo ayudar..."
               />
             </div>
 
@@ -213,7 +213,7 @@ export const ContactSection = () => {
       {/* Additional Info */}
       <div className="text-center mb-4 lg:mb-12">
         <p className="text-sm sm:text-lg text-gray-400 text-center w-full  mb-4 leading-relaxed flex flex-col items-center">
-          ¿Tienes una oportunidad laboral que podría interesarme? Me encantaría conocer más sobre tu propuesta.
+          ¿Preferís conectar por otro canal? Estoy a un mensaje de distancia.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
           <a

@@ -16,7 +16,7 @@ export const projects: ProjectProps[] = [
 		id: "progressus-gym",
 		title: "Progressus Gym",
 		description:
-			"Plataforma web para un gimnasio en Córdoba, con sistema multirol y gestión de planes, turnos y compras en línea.",
+			"Plataforma web completa para un gimnasio en Córdoba: sistema multirol (admin, entrenador, nutricionista y socio), gestión de planes de entrenamiento, reserva de turnos y tienda online integrada — todo en un solo lugar.",
 		image: ["/progressus/progressus.png", "/progressus/progressus1.png", "/progressus/progressus3.png"],
 		badge: "Proyecto Freelance",
 		privateCode: true,
@@ -73,7 +73,7 @@ export const projects: ProjectProps[] = [
 		id: "crm-lla-jujuy",
 		title: "CRM LLA Jujuy",
 		description:
-			"CRM desarrollado para la filial de La Libertad Avanza en Jujuy, orientado a centralizar la gestión de contactos, seguimiento territorial y organización operativa desde un dashboard privado. Me encargué del desarrollo de la interfaz y de la experiencia del panel para agilizar el trabajo interno del equipo.",
+			"CRM a medida para La Libertad Avanza Jujuy: centraliza contactos, seguimiento territorial y coordinación operativa en un dashboard privado. El equipo pasó de hojas de cálculo dispersas a un panel unificado que acelera la toma de decisiones.",
 		image: ["/crm-lla/crm-lla.png", "/crm-lla/crm-lla2.png", "/crm-lla/carm-lla3.png"],
 		badge: "Proyecto Empresarial",
 		privateCode: true,
@@ -84,7 +84,7 @@ export const projects: ProjectProps[] = [
 		id: "nortec-ecommerce",
 		title: "Nortec - Ecommerce",
 		description:
-			"Ecommerce para Nortec donde me encargue del back y front con Next Js y Node Js ",
+			"Ecommerce completo para Nortec — catálogo de productos, carrito, checkout y gestión de pedidos. Desarrollé el front y el back end de forma integral para que el negocio pudiera vender online desde el día uno.",
 		image: ["https://i.postimg.cc/jjjCNJYQ/nortece.png", "/nortec-web/nortec1.png", "/nortec-web/nortec2.png"],
 		badge: "Proyecto Freelance",
 		privateCode: true,
@@ -95,7 +95,7 @@ export const projects: ProjectProps[] = [
 		id: "nortec-dashboard",
 		title: "NortEc Dashboard",
 		description:
-			"Sistema de gestión de stock, ventas y compras de artículos tecnológicos. Diseñado para un único rol administrativo, permitiendo la administración completa de inventario, operaciones y datos comerciales desde un panel centralizado. USUARIO: admin , CONTRASEÑA: panchi123",
+			"Panel de control completo para la gestión interna de Nortec: stock, ventas, compras y reportes en un dashboard centralizado. Permite al dueño tener visibilidad total del negocio en tiempo real. (Demo — usuario: admin, contraseña: panchi123)",
 		image: ["/nortec-admin/nortec.png", "/nortec-admin/nortecadm1.png", "/nortec-admin/nortecadm2.png"],
 		badge: "Proyecto Freelance",
 		privateCode: true,
@@ -111,7 +111,7 @@ export const projects: ProjectProps[] = [
 		id: "workupcloud",
 		title: "WorkupCloud",
 		description:
-			"CRM desarrollado para una empresa en Estados Unidos. El administrador podía crear workspaces y asignar tareas a empleados. Me encargué de la implementación del módulo de gestión de tareas, incluyendo status, fecha de entrega, prioridad y flujo de trabajo dinámico.",
+			"CRM para una empresa en Estados Unidos que necesitaba organizar equipos distribuidos. Desarrollé el módulo de gestión de tareas con asignación por workspace, prioridades, fechas de entrega y flujo de trabajo dinámico — reduciendo la fricción operativa del equipo.",
 		image: ["/workoudcloud.png"],
 		badge: "Proyecto Empresarial",
 		privateCode: true,
@@ -121,7 +121,7 @@ export const projects: ProjectProps[] = [
 		id: "resurface",
 		title: "Resurface",
 		description:
-			"Plataforma de alquileres vacacionales o no similar a Airbnb para un cliente en Estados Unidos. Me enfoqué en el desarrollo del sistema avanzado de filtros (localidad, tamaño, cantidad de baños, entre otros) para optimizar la búsqueda y experiencia del usuario.",
+			"Plataforma de alquileres vacacionales para un cliente en Estados Unidos, similar a Airbnb. Desarrollé el sistema avanzado de búsqueda y filtros (localidad, tamaño, ambientes, baños) para que los usuarios encuentren exactamente lo que buscan en segundos.",
 		image: ["/resurface.png"],
 		badge: "Proyecto Empresarial",
 		privateCode: true,

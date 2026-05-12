@@ -150,7 +150,7 @@ export const ExperiencieSection = () => {
 					gradientFrom="from-blue-400"
 					gradientTo="to-purple-500"
 					subtitleColor="#FFD700"
-					description="Más de 2 años de experiencia desarrollando aplicaciones web modernas, enfocadas en rendimiento, escalabilidad y experiencias de usuario de alto nivel."
+					description="Más de 2 años entregando soluciones digitales reales a empresas y emprendedores en Argentina y el exterior. Resultados medibles en proyectos de gestión, e-commerce, plataformas y dashboards."
 	
 				/>
 
