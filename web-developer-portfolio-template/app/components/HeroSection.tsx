@@ -44,7 +44,7 @@ export const HeroSection = () => {
 
 
 			{/* Contenido principal */}
-			<div className="relative  w-full flex flex-col justify-center items-center  gap-y-2 md:flex-row-reverse md:justify-center gap-x-44 flew-wrap lg:items-center z-10  mx-auto px-4">
+			<div className="relative  w-full flex flex-col justify-center items-center  gap-y-2 md:flex-row-reverse md:justify-center gap-x-24 flew-wrap lg:items-center z-10  mx-auto px-4">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.9 }}
 					whileInView={{ opacity: 1, scale: 1 }}
@@ -54,7 +54,7 @@ export const HeroSection = () => {
     relative
     w-36 h-36
     sm:w-40 sm:h-40
-    lg:w-80 lg:h-80
+    lg:w-60 lg:h-60
     rounded-full
 
     overflow-hidden
@@ -86,12 +86,12 @@ export const HeroSection = () => {
 				>
 					{/* Nombre */}
 					{/* Nombre */}
-					<div className="relative inline-block px-4 my-3 md:my-8 sm:px-0">
+					<div className="relative inline-block px-4 my-3 md:my-5 sm:px-0">
 						<div className="absolute -inset-2 bg-gradient-to-r from-blue-500/40 via-purple-500/40 to-pink-500/40 rounded-3xl blur-2xl opacity-80"></div>
 
 						<h1 className="
     relative
-    text-3xl sm:text-6xl 
+    text-2xl sm:text-4xl 
     font-bold tracking-tight
     bg-clip-text text-transparent
     bg-gradient-to-r text-white
@@ -108,7 +108,7 @@ export const HeroSection = () => {
 								<span className="h-px text-sm  w-4 sm:w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 
 								<h2 className="
-        text-xs md:text-lg 
+        text-xs md:text-sm 
         font-medium tracking-wide
         text-blue-400
       ">
@@ -117,11 +117,11 @@ export const HeroSection = () => {
 
 								<span className="h-px w-4 sm:w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 							</div>
-							<p className="text-xs lg:text-base sm:text-lg text-gray-400 w-full md:max-w-3xl px-1 sm:px-0">
+							<p className="text-xs lg:text-sm sm:text-base text-gray-400 w-full md:max-w-3xl px-1 sm:px-0">
 								Desarrollo aplicaciones web que hacen crecer tu negocio. Convierto tu idea en un producto digital profesional — con diseño moderno, código de calidad y foco en resultados concretos.
 							</p>
 							<p className="text-xs sm:text-sm text-gray-500">
-								+10 proyectos entregados · Clientes en Argentina y Estados Unidos · Disponible para nuevos proyectos
+								+10 proyectos entregados · Soporte post-lanzamiento incluido · Disponible para nuevos proyectos
 							</p>
 						</div>
 					</div>
@@ -130,7 +130,7 @@ export const HeroSection = () => {
 					<div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-4 mt-8 sm:mt-12 px-4 sm:px-0">
 						<a href="#work" className="group relative inline-flex items-center justify-center">
 							<div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur opacity-75 group-hover:opacity-100 transition"></div>
-							<span className="relative px-6 sm:px-8 py-2 lg:py-3 bg-[#161B22] rounded-full inline-flex items-center justify-center w-full sm:w-auto">
+							<span className="relative px-6 sm:px-8 py-2  bg-[#161B22] rounded-full inline-flex items-center justify-center w-full sm:w-auto text-base">
 								Ver mis proyectos
 								<svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -139,10 +139,10 @@ export const HeroSection = () => {
 						</a>
 						<a
 							href="#contact"
-							className="px-6 sm:px-8 py-2 flex items-center justify-center gap-3 lg:py-3 bg-[#21262D] rounded-full hover:bg-[#2D333B] transition-colors border border-[#2D333B] hover:border-gray-600 text-center"
+							className="px-6 sm:px-8 py-2 flex items-center justify-center gap-3 bg-[#21262D] rounded-full hover:bg-[#2D333B] transition-colors border border-[#2D333B] hover:border-gray-600 text-center text-base"
 						>
 							Agendar Reunión Gratuita
-							<CalendarCheck size={18} />
+							<CalendarCheck size={15} />
 						</a>
 					</div>
 					{/* Redes sociales */}
