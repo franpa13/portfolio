@@ -31,14 +31,14 @@ export const techIcons: Record<
     // Frontend
     "React": { icon: <SiReact />, color: "#61DAFB" },
     "React Js": { icon: <SiReact />, color: "#61DAFB" },
-    "Next Js": { icon: <SiNextdotjs />, color: "#000000" },
-    "Next.js": { icon: <SiNextdotjs />, color: "#000000" },
+    "Next Js": { icon: <SiNextdotjs />, color: "#ffffff" },
+    "Next.js": { icon: <SiNextdotjs />, color: "#ffffff" },
     "Typescript": { icon: <SiTypescript />, color: "#3178C6" },
     "Javascript": { icon: <TbBrandJavascript />, color: "#F7DF1E" },
     "Tailwind CSS": { icon: <SiTailwindcss />, color: "#38BDF8" },
     "Tailwind": { icon: <SiTailwindcss />, color: "#38BDF8" },
     "Material UI": { icon: <SiMui />, color: "#007FFF" },
-    "Shadcn": { icon: <SiShadcnui />, color: "#000000" },
+    "Shadcn": { icon: <SiShadcnui />, color: "#ffffff" },
     "Redux": { icon: <SiRedux />, color: "#764ABC" },
     "Zustand": { icon: <ZustandIcon />, color: "#5B4638" },
     "Axios": { icon: <SiAxios />, color: "#5A29E4" },
@@ -49,7 +49,7 @@ export const techIcons: Record<
     // Backend
     "Node Js": { icon: <SiNodedotjs />, color: "#8CC84B" },
     "Node": { icon: <SiNodedotjs />, color: "#8CC84B" },
-    "Express": { icon: <SiExpress />, color: "#000000" },
+    "Express": { icon: <SiExpress />, color: "#ffffff" },
     "PostgreSQL": { icon: <SiPostgresql />, color: "#336791" },
 
     // Otros

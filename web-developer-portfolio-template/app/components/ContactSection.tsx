@@ -78,9 +78,9 @@ export const ContactSection = () => {
     <section id="contact" className="py-5 my-0 px-4 scroll-mt-20">
       <div className="max-w-4xl mx-auto sm:px-6">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-xl flex items-center justify-center gap-1 md:gap-3 sm:text-4xl font-bold text-center text-white">
-            ¿Listo para <span className="text-transparent bg-clip-text bg-gradient-to-r flex items-center justify-center  sm:text-4xl from-blue-400 to-purple-500">lanzar tu proyecto? <Image
+        <div className="text-center mb-8">
+          <h2 className="text-xl flex items-center justify-center gap-1 md:gap-2 sm:text-2xl font-bold text-center text-white">
+            ¿Listo para <span className="text-transparent bg-clip-text bg-gradient-to-r flex items-center justify-center  sm:text-2xl from-blue-400 to-purple-500">lanzar tu proyecto? <Image
               src={"/gifs/servicio-al-cliente.gif"}
               width={32}
               height={32}
@@ -90,13 +90,13 @@ export const ContactSection = () => {
           
           rounded-full
          w-9 h-9
-           lg:w-14 lg:h-14
+           lg:w-12 lg:h-12
          "/>
 
             </span>
 
           </h2>
-          <p className="text-xs sm:text-lg text-gray-400  mt-8 leading-relaxed flex flex-col items-center">
+          <p className=" text-xs sm:text-sm text-gray-400  mt-4 leading-relaxed flex flex-col items-center">
             Contame tu idea y en 24hs tenés una respuesta. Trabajo con empresas y emprendedores que quieren
             resultados reales, no solo código. Primera consulta sin costo.
           </p>

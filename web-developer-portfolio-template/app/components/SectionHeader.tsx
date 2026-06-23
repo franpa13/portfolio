@@ -25,21 +25,10 @@ export const SectionHeader = ({
 }: SectionHeaderProps) => {
     return (
         <div className={`flex flex-col gap-4 items-center justify-center mb-16 ${className}`}>
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="flex flex-row items-center gap-3 mb-2"
-                style={{ color: subtitleColor }}
-            >
 
-
-
-            </motion.div>
 
             <motion.h2
-                className="text-xl sm:text-4xl  font-bold text-center text-white "
+                className="text-xl sm:text-2xl  font-bold text-center text-white "
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
@@ -54,6 +43,7 @@ export const SectionHeader = ({
       bg-clip-text
       text-transparent
       bg-gradient-to-r
+      
       ${gradientFrom}
       ${gradientTo}
     `}
@@ -62,15 +52,15 @@ export const SectionHeader = ({
 
                         <Image
                             src={icon ? icon : "/gifs/cohete.gif"}
-                            width={32}
-                            height={32}
+                            width={28}
+                            height={28}
                             alt="Icon"
                             className="
 
      
      rounded-full
     w-9 h-9
-      lg:w-14 lg:h-14
+      lg:w-12 lg:h-12 
     "
                         />
 
@@ -81,7 +71,7 @@ export const SectionHeader = ({
             </motion.h2>
 
             <motion.p
-                className="text-xs sm:text-lg text-gray-400 max-w-2xl mt-4 leading-relaxed flex flex-col items-center"
+                className="text-xs sm:text-sm text-gray-400 max-w-2xl mt-0 leading-relaxed flex flex-col items-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
