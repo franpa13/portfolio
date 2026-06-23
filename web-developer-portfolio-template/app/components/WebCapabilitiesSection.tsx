@@ -68,7 +68,7 @@ export const WebCapabilitiesSection = () => {
 					title=""
 					highlightedText="Herramientas para construir tu producto"
 					description="Trabajo con las tecnologías más demandadas del mercado para entregar productos rápidos, escalables y fáciles de mantener."
-					subtitleColor="#FFD700"
+			
 					gradientFrom="from-blue-400"
 					gradientTo="to-purple-500"
 					className="px-4"

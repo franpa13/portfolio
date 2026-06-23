@@ -16,7 +16,7 @@ export const ProjectsSection = () => {
           title=""
           highlightedText="Proyectos Destacados"
           description="Una selección de mis trabajos más destacados, desde plataformas empresariales hasta proyectos técnicos personales."
-          subtitleColor="#FFD700"
+
           gradientFrom="from-blue-300"
           gradientTo="to-purple-400"
         />

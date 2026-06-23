@@ -149,7 +149,7 @@ export const ExperiencieSection = () => {
 					highlightedText="Experiencia Profesional"
 					gradientFrom="from-blue-400"
 					gradientTo="to-purple-500"
-					subtitleColor="#FFD700"
+	
 					description="Más de 2 años entregando soluciones digitales reales a empresas y emprendedores en Argentina y el exterior. Resultados medibles en proyectos de gestión, e-commerce, plataformas y dashboards."
 	
 				/>

@@ -7,7 +7,7 @@ interface SectionHeaderProps {
     title: string;
     highlightedText?: string;
     description: string;
-    subtitleColor?: string;
+  
     gradientFrom?: string;
     gradientTo?: string;
     className?: string;
@@ -18,7 +18,7 @@ export const SectionHeader = ({
     title,
     highlightedText,
     description,
-    subtitleColor = "#FFD700",
+
     gradientFrom = "from-blue-400",
     gradientTo = "to-purple-500",
     className = ""
