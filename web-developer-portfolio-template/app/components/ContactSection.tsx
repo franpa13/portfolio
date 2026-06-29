@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import SocialLinks, { SocialLinksType } from './SocialLinks';
 import { Snackbar } from './Snackbar';
@@ -11,8 +11,6 @@ export const ContactSection = () => {
     { name: 'GitHub', icon: SiGithub, href: 'https://github.com/franpa13' },
     { name: 'TikTok(Creador de contenido sobre programacion)', icon: SiTiktok, href: 'https://www.tiktok.com/@jujedev?is_from_webapp=1&sender_device=pc' },
   ];
-
-  const form = useRef<HTMLFormElement>(null);
 
   const [snackbar, setSnackbar] = useState({
     open: false,
@@ -39,13 +37,18 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    if (!form.current) return;
-
     emailjs
-      .sendForm(
+      .send(
         "service_321i4q6",
         "template_3oakbci",
-        form.current,
+        {
+          name: formData.name,
+          email: formData.email,
+          from_name: formData.name,
+          from_email: formData.email,
+          reply_to: formData.email,
+          message: formData.message,
+        },
         "AVnu_VMQjQjI8K_U7"
       )
       .then(
@@ -113,7 +116,7 @@ export const ContactSection = () => {
         </div>
 
         <div className="mb-12">
-          <form ref={form} onSubmit={sendEmail} className="space-y-6">
+          <form onSubmit={sendEmail} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
