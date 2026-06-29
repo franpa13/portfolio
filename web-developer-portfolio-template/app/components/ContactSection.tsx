@@ -6,6 +6,8 @@ import { Snackbar } from './Snackbar';
 import { SiGithub, SiTiktok } from "@icons-pack/react-simple-icons";
 import Image from "next/image";
 
+const CONTACT_EMAIL = "franpa619@gmail.com";
+
 export const ContactSection = () => {
   const socials: SocialLinksType[] = [
     { name: 'GitHub', icon: SiGithub, href: 'https://github.com/franpa13' },
@@ -33,22 +35,52 @@ export const ContactSection = () => {
     });
   };
 
-  const sendEmail = (e: React.FormEvent) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const submittedForm = new FormData(e.currentTarget);
+    const senderName = String(submittedForm.get("name") ?? "").trim();
+    const senderEmail = String(submittedForm.get("email") ?? "").trim();
+    const senderMessage = String(submittedForm.get("message") ?? "").trim();
+
+    if (!senderName || !senderEmail || !senderMessage) {
+      setSnackbar({
+        open: true,
+        message: "Completá nombre, email y mensaje antes de enviar.",
+        type: "warning",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
+
+    const templateParams = {
+      name: senderName,
+      email: senderEmail,
+      user_name: senderName,
+      user_email: senderEmail,
+      from_name: senderName,
+      from_email: senderEmail,
+      reply_to: senderEmail,
+      to_name: "Francisco Paredes",
+      to_email: CONTACT_EMAIL,
+      message: senderMessage,
+    };
+
+    if (process.env.NODE_ENV === "development") {
+      console.info("Contact form values captured", {
+        hasName: Boolean(templateParams.name),
+        hasEmail: Boolean(templateParams.email),
+        hasMessage: Boolean(templateParams.message),
+        toEmail: templateParams.to_email,
+      });
+    }
 
     emailjs
       .send(
         "service_321i4q6",
         "template_3oakbci",
-        {
-          name: formData.name,
-          email: formData.email,
-          from_name: formData.name,
-          from_email: formData.email,
-          reply_to: formData.email,
-          message: formData.message,
-        },
+        templateParams,
         "AVnu_VMQjQjI8K_U7"
       )
       .then(
@@ -64,7 +96,8 @@ export const ContactSection = () => {
             message: "",
           });
         },
-        () => {
+        (error) => {
+          console.error("EmailJS send failed", error);
           setSnackbar({
             open: true,
             message: "Error al enviar el mensaje. Intenta nuevamente.",
