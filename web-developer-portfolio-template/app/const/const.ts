@@ -20,7 +20,7 @@ export const projects: ProjectProps[] = [
 		badge: "Proyecto Empresarial",
 		privateCode: true,
 		stack: ["Next Js", "Tailwind CSS", "Typescript", "Material UI", "Zod"],
-		hrefDeploy: "https://www.swaplyar.com/es/inicio",
+		hrefDeploy: "https://www.swaplyar.com/es/iniciar-sesion-o-registro",
 	}, {
 		id: "yemas-del-sol",
 		title: "Yemas Del Sol",
